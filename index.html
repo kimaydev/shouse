@@ -49,6 +49,13 @@
     <script src="js/prefixfree.min.js"></script>
     <!-- response -->
     <script src="js/respond.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -238,7 +245,57 @@
       <!-- //싱싱튜브 -->
       <!-- HOT Keyword -->
       <section class="keyword">
-        <div class="inner"></div>
+        <div class="inner">
+          <h2 class="keyword-title">HOT Keyword</h2>
+          <div class="keyword-wrap">
+            <div class="swiper sw-keyword">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#"><span>#플랜테리어</span></a>
+                  <a href="#"><span>#반려식물</span></a>
+                  <a href="#" class="green"><span>#홈가드닝</span></a>
+                  <a href="#"><span>#식물카페</span></a>
+                  <a href="#"><span>#식물인테리어</span></a>
+                  <a href="#"><span>#plant</span></a>
+                  <a href="#"><span>#식물</span></a>
+                  <a href="#"><span>#공기정화식물</span></a>
+                  <a href="#"><span>#희귀식물</span></a>
+                  <a href="#"><span>#싱그런 여행</span></a>
+                  <a href="#"><span>#몬스테라</span></a>
+                  <a href="#"><span>#식물키우기</span></a>
+                  <a href="#"><span>#수경재배</span></a>
+                  <a href="#"><span>#토분</span></a>
+                  <a href="#"><span>#꽃</span></a>
+                  <br />
+                  <a href="#"><span>#화분</span></a>
+                  <a href="#"><span>#공기정화</span></a>
+                  <a href="#"><span>#5월</span></a>
+                  <a href="#"><span>#필로덴드론</span></a>
+                  <a href="#"><span>#식물집사</span></a>
+                  <a href="#"><span>#가드닝</span></a>
+                  <a href="#"><span>#행잉플랜트</span></a>
+                  <a href="#"><span>#6월</span></a>
+                  <a href="#"><span>#분갈이</span></a>
+                  <a href="#"><span>#튤립</span></a>
+                  <a href="#"><span>#식인</span></a>
+                  <a href="#"><span>#알로카시아</span></a>
+                  <a href="#"><span>#식집사</span></a>
+                  <a href="#"><span>#경기도</span></a>
+                  <a href="#"><span>#꽃다발</span></a>
+                </div>
+              </div>
+            </div>
+            <script>
+              new Swiper(".sw-keyword", {
+                slidesPerView: "auto",
+                speed: 600,
+                loop: false,
+                allowTouchMove: true,
+                spaceBetween: 0,
+              });
+            </script>
+          </div>
+        </div>
       </section>
       <!-- //HOT Keyword -->
       <!-- MD's Pick -->
