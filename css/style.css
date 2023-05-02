@@ -54,6 +54,40 @@ a {
 .keyword {
 }
 
+.keyword-title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #222624;
+  line-height: 63px;
+}
+.keyword-wrap {
+  padding: 60px 40px;
+  background: #f2faf5 url("../images/hotkeyword.jpg") no-repeat right center;
+  background-size: 33.8% auto;
+}
+.keyword-wrap a {
+  display: inline-block;
+  color: #3a6b4a;
+  background: #d5eadd;
+  padding: 0 20px;
+  line-height: 50px;
+  border-radius: 25px;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+.keyword-wrap a span {
+  display: block;
+  padding: 0 10px;
+}
+.keyword-wrap a.green {
+  background: #18a450;
+  color: #fff;
+}
+
+.sw-keyword .swiper-wrapper .swiper-slide {
+  white-space: nowrap;
+  text-align: center;
+}
 /* MD's Pick */
 .pick {
 }
