@@ -16,6 +16,14 @@ a {
 .wrap {
 }
 .inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  position: relative;
+  clear: both;
 }
 
 /* 상단 */
@@ -37,7 +45,112 @@ a {
 /* 스토리 */
 .story {
 }
+.story .subtitle {
+  line-height: 63px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #222;
+}
+.story .s-menu ul {
+}
+.story .s-menu li {
+  margin-right: 9px;
+  float: left;
+}
+.story .active {
+  color: #fff !important;
+  background-color: #009a3e !important;
+}
+.story .s-menu li a {
+  font-weight: 300;
+  display: block;
+  padding: 0 9px;
+  line-height: 37px;
+  font-size: 14px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  transition: background 0.5s;
+}
+.story .s-menu li a:hover {
+  background: #d9d9d9;
+}
+.story .story-gallery {
+}
+.story .story-list {
+  padding-top: 30px;
+}
+/* flex 적용 검토 */
+.story .story-list li {
+  float: left;
+  width: 25%;
+}
+.story .story-thumb {
+}
+.story .story-link {
+  display: block;
+}
+.story .story-link:hover .story-img img {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.story .story-link:hover p {
+  text-decoration: underline;
+}
 
+.story .story-link p {
+  font-size: 14px;
+  line-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.story .story-img {
+  position: relative;
+  width: 285px;
+  height: 190px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.story .story-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+  transition: all 2s;
+}
+
+.story .story-user {
+  display: block;
+  margin-top: 15px;
+}
+.story .story-uimg {
+  position: relative;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.story .story-uimg img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  height: 100%;
+}
+.story .story-user p {
+  float: left;
+  line-height: 35px;
+  margin-left: 10px;
+}
+.story .story-user:hover p {
+  text-decoration: underline;
+}
 /* 인기 계정 랭킹 */
 .ranking {
 }
