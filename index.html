@@ -199,12 +199,149 @@
       <!-- //상단 -->
       <!-- 비주얼 -->
       <section class="visual">
-        <div class="inner"></div>
+        <div class="inner">
+          <div class="swiper v-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/visual/visual1.jpg"
+                    alt="슬라이드 이미지 1"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/visual/visual2.jpg"
+                    alt="슬라이드 이미지 2"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/visual/visual3.jpg"
+                    alt="슬라이드 이미지 3"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/visual/visual4.jpg"
+                    alt="슬라이드 이미지 4"
+                  />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img
+                    src="images/visual/visual5.jpg"
+                    alt="슬라이드 이미지 5"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="v-nav-wrap">
+              <div class="v-btn v-prev"></div>
+              <div class="v-pg"></div>
+              <div class="v-btn v-next"></div>
+            </div>
+          </div>
+          <!-- v-swiper -->
+          <script>
+            var swiper = new Swiper(".v-swiper", {
+              loop: true,
+              speed: 500,
+              autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+              },
+              pagination: {
+                el: ".v-pg",
+                type: "fraction",
+              },
+              navigation: {
+                nextEl: ".v-next",
+                prevEl: ".v-prev",
+              },
+            });
+          </script>
+        </div>
       </section>
       <!-- //비주얼 -->
       <!-- 퀵메뉴 -->
       <section class="quick">
-        <div class="inner"></div>
+        <div class="inner">
+          <ul class="quick-btn">
+            <li>
+              <a href="#">
+                <div class="img">
+                  <img src="images/icon_quick_1.jpg" alt="희귀식물" />
+                </div>
+                <span>희귀식물</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img">
+                  <img src="images/icon_quick_2.jpg" alt="쇼핑하기" />
+                </div>
+                <span>쇼핑하기</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img">
+                  <img src="images/icon_quick_3.jpg" alt="식물 키우기" />
+                </div>
+                <span>식물 키우기</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img">
+                  <img src="images/icon_quick_4.jpg" alt="스토리" />
+                </div>
+                <span>스토리</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img">
+                  <img src="images/icon_quick_5.jpg" alt="플랜테리어TIP" />
+                </div>
+                <span>플랜테리어TIP</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img">
+                  <img src="images/icon_quick_6.jpg" alt="100원딜" />
+                </div>
+                <span>100원딜</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="new">
+                <div class="img">
+                  <i class="icon-new"></i>
+                  <img src="images/icon_quick_7.jpg" alt="싱그런 여행" />
+                </div>
+                <span>싱그런 여행</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="img">
+                  <img src="images/icon_quick_8.jpg" alt="혜택보기" />
+                </div>
+                <span>혜택보기</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- //퀵메뉴 -->
       <!-- 당신을 위한 맞춤 추천 -->
