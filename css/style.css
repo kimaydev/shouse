@@ -17,9 +17,12 @@ a {
 /* 공통 레이아웃 */
 .wrap {
 }
-.wrap > section:first-of-type {
-  padding-top: 30px;
+.wrap > section {
+  padding: 30px 0;
 }
+/* .wrap > section:first-of-type {
+  padding-top: 30px;
+} */
 .inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -41,6 +44,8 @@ a {
 
 /* 상단 */
 .header {
+  position: relative;
+  z-index: 9999;
 }
 .header .top {
   background: #f2f2f2;
@@ -108,6 +113,7 @@ a {
   text-decoration: underline;
 }
 .header .bottom {
+  background: #fff;
   border-bottom: 1px solid #d9d9d9;
 }
 .header .bottom .inner {
@@ -141,6 +147,19 @@ a {
   cursor: pointer;
 }
 .header .bottom .nav .left .sitemap-btn span {
+}
+.header .bottom .nav .left .sitemap-list-wrap {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 160px);
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+.header .bottom .nav .left .sitemap-list {
+  height: 300px;
+  background-color: pink;
 }
 
 .header .bottom .nav .left .gnb {
@@ -327,11 +346,12 @@ a {
   background-color: #b3b3b3;
 }
 /* 퀵메뉴 */
-.quick {
+section.quick {
+  padding: 0;
 }
 .quick-btn {
   display: flex;
-  padding: 30px 0 60px;
+  padding-bottom: 60px;
   border-bottom: 2px solid #f2f2f2;
 }
 .quick-btn > li {
@@ -508,7 +528,8 @@ a {
 }
 .keyword-wrap {
   padding: 60px 40px;
-  background: #f2faf5 url("../images/hotkeyword/hotkeyword.jpg") no-repeat right center;
+  background: #f2faf5 url("../images/hotkeyword/hotkeyword.jpg") no-repeat right
+    center;
   background-size: 33.8% auto;
 }
 .keyword-wrap a {
@@ -569,4 +590,156 @@ a {
 
 /* 하단 */
 .footer {
+  font-size: 15px;
+  font-weight: 300;
+  color: #d9d9d9;
+  padding: 60px 0;
+  background: #4d4d4d;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.footer a.link {
+  color: #fff;
+  text-decoration: underline;
+}
+.footer .footer-top {
+  border-bottom: 2px solid #494949;
+  padding-bottom: 30px;
+}
+.footer .footer-top ul li::after {
+  content: "";
+  display: inline-block;
+  width: 0.5px;
+  height: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #808080;
+}
+.footer .footer-top ul li:last-child:after {
+  display: none;
+}
+.footer .footer-top .footer-info {
+}
+.footer .footer-top .footer-info ul {
+  margin-bottom: 15px;
+}
+.footer .footer-top .footer-info ul:last-child {
+  margin-bottom: 0;
+}
+.footer .footer-top .footer-cs {
+}
+.footer .footer-top .footer-cs > li {
+}
+.footer .footer-top .footer-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background: #3e3e3e;
+}
+.footer .footer-top .footer-menu > li {
+}
+.footer .footer-top .footer-menu > li::after {
+  display: none;
+}
+.footer .footer-top .footer-menu > li a {
+  display: block;
+  padding: 17px 0;
+  color: #fff;
+}
+.footer .footer-top .footer-menu > li a:hover {
+  text-decoration: underline;
+}
+.footer .footer-top .footer-menu > li a .icon-arrow {
+  font-size: 0;
+}
+.footer .footer-top .footer-menu > li a .icon-arrow::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  vertical-align: 1px;
+  margin-left: 10px;
+  background: url(/images/icon_arrow_r.png) no-repeat center;
+  background-size: contain;
+}
+.footer .footer-top .footer-tel {
+}
+.footer .footer-top .footer-tel > li {
+}
+.footer .footer-top .footer-address {
+}
+.footer .footer-top .footer-address > li {
+}
+.footer .footer-bottom {
+  padding-top: 30px;
+  color: #b3b3b3;
+}
+.footer .footer-bottom ul {
+  margin-bottom: 0;
+}
+.footer .footer-bottom ul > li {
+  margin-bottom: 10px;
+}
+.footer .footer-bottom ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/* 메인화면 고정 퀵메뉴 */
+.fix-quick-menu {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+}
+.fix-quick-menu > li {
+  margin-bottom: 10px;
+}
+.fix-quick-menu > li:last-child {
+  margin-bottom: 0;
+}
+.fix-quick-menu > li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.fix-quick-menu > li a.kakao-btn {
+  background: #fee800;
+}
+.fix-quick-menu > li a img {
+  display: block;
+}
+.fix-quick-menu > li a.top-btn {
+  position: relative;
+  color: #fff;
+  background: #009a3e;
+  border: 2px solid #008033;
+}
+.fix-quick-menu > li a.top-btn span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+}
+.fix-quick-menu > li a.top-btn .icon-top {
+}
+.fix-quick-menu > li a.top-btn .icon-top::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 10px;
+  margin: 0 auto 3px;
+  background: url(/images/icon_fix_top.png) no-repeat center;
+  background-size: contain;
 }
