@@ -24,6 +24,27 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subtitle {
+  line-height: 63px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #222;
+}
+.subtab-link {
+  font-size: 16px;
+  color: #009a3e;
+  font-weight: 600;
+}
+.section-title .more img {
+  vertical-align: 1px;
+  width: 7px;
+  margin-left: 7px;
+}
 .clearfix::after {
   content: "";
   display: block;
@@ -401,10 +422,8 @@ section.quick {
 .story {
 }
 .story .subtitle {
-  line-height: 63px;
-  font-size: 25px;
-  font-weight: 700;
-  color: #222;
+}
+.story .subtab-link {
 }
 .story .s-menu ul {
 }
@@ -424,7 +443,7 @@ section.quick {
   font-size: 14px;
   background: #f2f2f2;
   border-radius: 4px;
-  transition: background 0.5s;
+  transition: all 0.5s;
 }
 .story .s-menu li a:hover {
   background: #d9d9d9;
@@ -444,8 +463,8 @@ section.quick {
 .story .story-link {
   display: block;
 }
-.story .story-link:hover .story-img img {
-  transform: translate(-50%, -50%) scale(1.2);
+.story .story-link:hover .story-img .thumb-img {
+  transform: translate(-50%, -50%) scale(1.05);
 }
 .story .story-link:hover p {
   text-decoration: underline;
@@ -476,7 +495,33 @@ section.quick {
   transform: translate(-50%, -50%);
   width: 100%;
 
-  transition: all 2s;
+  transition: all 1s;
+}
+.story .story-img .s-bt {
+  position: absolute;
+  top: 0;
+  border-bottom-right-radius: 4px;
+  color: #fff;
+  font-size: 12px;
+  background: #e05438;
+  padding: 0px 7px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.story .story-img .s-bookmark {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  padding: 0;
+  width: 32px;
+  height: 47px;
+  border: 0;
+  background: transparent;
+}
+.story .story-img .s-bookmark img {
+  transform: none;
+  position: static;
+  transition: none;
 }
 
 .story .story-user {
@@ -508,6 +553,29 @@ section.quick {
 }
 /* 인기 계정 랭킹 */
 .ranking {
+}
+.ranking .r-menu {
+  display: flex;
+  justify-content: left;
+}
+.ranking .r-menu li {
+}
+.story .active {
+  color: #fff !important;
+  background-color: #009a3e !important;
+}
+.story .s-menu li a {
+  font-weight: 300;
+  display: block;
+  padding: 0 9px;
+  line-height: 37px;
+  font-size: 14px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.story .s-menu li a:hover {
+  background: #d9d9d9;
 }
 
 /* 싱그런 여행 */
