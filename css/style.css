@@ -60,6 +60,28 @@ a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+.s-menu li {
+  margin-right: 9px;
+  float: left;
+}
+.s-menu li a.active {
+  color: #fff !important;
+  background-color: #009a3e !important;
+}
+.s-menu li a {
+  font-weight: 300;
+  display: block;
+  padding: 0 9px;
+  line-height: 37px;
+  font-size: 14px;
+  background: #f2f2f2;
+  border-radius: 4px;
+  transition: all 0.5s;
+}
+.s-menu li a:hover {
+  background: #d9d9d9;
+}
+
 /* 상단 */
 .header {
   position: relative;
@@ -179,11 +201,16 @@ a {
   border-bottom: 1px solid #d9d9d9;
   background-color: #fff;
 }
-.header .bottom .nav .left .sitemap-list{}
-.header .bottom .nav .left .sitemap-list > li{}
-.header .bottom .nav .left .sitemap-list .list-top{}
-.header .bottom .nav .left .sitemap-list .list-top{}
-.header .bottom .nav .left .sitemap-list .list-bottom{}
+.header .bottom .nav .left .sitemap-list {
+}
+.header .bottom .nav .left .sitemap-list > li {
+}
+.header .bottom .nav .left .sitemap-list .list-top {
+}
+.header .bottom .nav .left .sitemap-list .list-top {
+}
+.header .bottom .nav .left .sitemap-list .list-bottom {
+}
 
 .header .bottom .nav .left .gnb {
   margin-left: 30px;
@@ -427,27 +454,6 @@ section.quick {
 }
 .story .s-menu ul {
 }
-.story .s-menu li {
-  margin-right: 9px;
-  float: left;
-}
-.story .active {
-  color: #fff !important;
-  background-color: #009a3e !important;
-}
-.story .s-menu li a {
-  font-weight: 300;
-  display: block;
-  padding: 0 9px;
-  line-height: 37px;
-  font-size: 14px;
-  background: #f2f2f2;
-  border-radius: 4px;
-  transition: all 0.5s;
-}
-.story .s-menu li a:hover {
-  background: #d9d9d9;
-}
 .story .story-gallery {
 }
 .story .story-list {
@@ -580,6 +586,43 @@ section.quick {
 
 /* 싱그런 여행 */
 .travel {
+}
+.travel-list {
+}
+.travel-list ul {
+}
+.travel-list ul li {
+}
+.travel-list ul li a {
+}
+.travel-list .travel-left {
+}
+.travel-list .travel-left .trave-img {
+}
+.travel-list .travel-left .trave-txt {
+}
+.travel-list .travel-left .trave-txt .txt-top {
+}
+.travel-list .travel-left .trave-txt .txt-top .icon-place {
+}
+.travel-list .travel-left .trave-txt .txt-bottom {
+}
+.travel-list .travel-left .trave-txt .txt-bottom span {
+}
+
+.travel-list .travel-right {
+}
+.travel-list .travel-right ul {
+}
+.travel-list .travel-right ul li {
+}
+.travel-list .travel-right ul li .icon-like {
+}
+.travel-list .travel-right ul li .icon-bookmark {
+}
+.travel-list .travel-right ul li span {
+}
+.travel-list .travel-right ul li .icon-more {
 }
 
 /* 싱싱튜브 */
