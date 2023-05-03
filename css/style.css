@@ -535,29 +535,22 @@ a {
   text-align: center;
 }
 /* MD's Pick */
-.pick {
+.pick {}
+.pick-title {}
+.pick-img-menu {}
+.plant-img {}
+.plant-explanation {
+  color: #808080;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.clearfix::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  clear: both;
+.plant-price {}
+.discount {
+  color: #e05438 ;
 }
-.pick-title {
-  font-size: 25px;
-  font-weight: 700;
-  color: #222624;
-  line-height: 63px;
-}
-.plants-top-img > li {
-  width: calc(100% / 4);
-  float: left;
-}
-.plants-bottom-img > li {
-  width: calc(100% / 4);
-  float: left;
-}
+
 
 /* 가이드북 */
 .guide {
