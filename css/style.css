@@ -591,38 +591,105 @@ section.quick {
 }
 .travel-list ul {
 }
-.travel-list ul li {
+.travel-list > ul > li {
+  border-bottom: 1px solid #d9d9d9;
+}
+.travel-list > ul > li:first-child {
+  border-top: 1px solid #d9d9d9;
 }
 .travel-list ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
 }
+.travel-list ul li a:hover .txt-top {
+  text-decoration: underline;
+}
+
 .travel-list .travel-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.travel-list .travel-left .trave-img {
+.travel-list .travel-left .travel-img {
+  background: url("../images/travel/travel1.jpg") no-repeat center;
+  width: 49px;
+  height: 49px;
+  border: 1px solid #d9d9d9;
+  border-radius: 100%;
+  background-size: cover;
 }
-.travel-list .travel-left .trave-txt {
+.travel-list .travel-left .t-second {
+  background: url("../images/travel/travel2.jpeg") no-repeat center;
 }
-.travel-list .travel-left .trave-txt .txt-top {
+.travel-list .travel-left .t-third {
+  background: url("../images/travel/travel3.jpg") no-repeat center;
 }
-.travel-list .travel-left .trave-txt .txt-top .icon-place {
+
+.travel-list .travel-left .travel-txt {
 }
-.travel-list .travel-left .trave-txt .txt-bottom {
+.travel-list .travel-left .travel-txt .txt-top {
+  font-size: 16px;
+  color: #4d4d4d;
 }
-.travel-list .travel-left .trave-txt .txt-bottom span {
+.travel-list .travel-left .travel-txt .txt-top .icon-place {
+  background: url("../images/icon_place.png") no-repeat center;
+  background-size: 12px auto;
+  display: inline-block;
+  width: 26px;
+  height: 16px;
+  vertical-align: middle;
+}
+.travel-list .travel-left .travel-txt .txt-bottom {
+  font-size: 14px;
+  color: #808080;
+  margin-top: 9px;
+}
+.travel-list .travel-left .travel-txt .txt-bottom span {
 }
 
 .travel-list .travel-right {
 }
 .travel-list .travel-right ul {
+  display: flex;
 }
 .travel-list .travel-right ul li {
+  font-size: 14px;
+  color: #b3b3b3;
+  margin-left: 20px;
+}
+.travel-list .travel-right ul li:last-child {
+  margin-left: 50px;
 }
 .travel-list .travel-right ul li .icon-like {
+  background: url("../images/icon_s_like.png") no-repeat center;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  background-size: contain;
+  vertical-align: middle;
 }
 .travel-list .travel-right ul li .icon-bookmark {
+  background: url("../images/icon_s_bookmark.png") no-repeat center;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  vertical-align: middle;
 }
 .travel-list .travel-right ul li span {
+  display: inline-block;
+  min-width: 20px;
+  font-size: 14px;
+  color: #b3b3b3;
 }
 .travel-list .travel-right ul li .icon-more {
+  background: url("/images/arrow19_r.png");
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  background-size: contain;
 }
 
 /* 싱싱튜브 */
