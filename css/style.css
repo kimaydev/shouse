@@ -167,6 +167,7 @@ a {
 .header .bottom .nav .left .sitemap-btn span {
 }
 .header .bottom .nav .left .sitemap-list-wrap {
+  display: none;
   position: absolute;
   top: 160px;
   left: 0;
@@ -175,15 +176,49 @@ a {
   background: rgba(0, 0, 0, 0.4);
 }
 .header .bottom .nav .left .sitemap-list-box {
-  height: 300px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 0.5px solid #d9d9d9;
   background-color: #fff;
 }
-.header .bottom .nav .left .sitemap-list{}
-.header .bottom .nav .left .sitemap-list > li{}
-.header .bottom .nav .left .sitemap-list .list-top{}
-.header .bottom .nav .left .sitemap-list .list-top{}
+.header .bottom .nav .left .sitemap-list{
+  display: flex;
+  justify-content: space-between;
+}
+.header .bottom .nav .left .sitemap-list > li{
+  width: 100%;  
+  padding: 20px 45px 50px;
+  border-right: 0.5px solid #f2f2f2;
+}
+.header .bottom .nav .left .sitemap-list > li:first-child{
+  border-left: 0.5px solid #f2f2f2;
+}
+.header .bottom .nav .left .sitemap-list a{
+  display: block;
+}
+.header .bottom .nav .left .sitemap-list .list-top{
+  
+}
+.header .bottom .nav .left .sitemap-list .sitemap-gnb{
+  font-size: 20px;
+  font-weight: 700;
+  padding: 20px 0;
+}
 .header .bottom .nav .left .sitemap-list .list-bottom{}
+.header .bottom .nav .left .sitemap-list .list-bottom a{  
+  color: #4d4d4d;
+}
+.header .bottom .nav .left .sitemap-list .list-bottom > ul > li{}
+.header .bottom .nav .left .sitemap-list .list-bottom > ul > li > a{
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px 0;
+}
+.header .bottom .nav .left .sitemap-list .list-bottom .sitemap-lnb{
+  margin-left: 10px;
+  font-size: 14px;
+}
+.header .bottom .nav .left .sitemap-list .list-bottom .sitemap-lnb li a{
+  padding: 5px 0;
+}
 
 .header .bottom .nav .left .gnb {
   margin-left: 30px;
@@ -551,15 +586,115 @@ section.quick {
 .story .story-user:hover p {
   text-decoration: underline;
 }
+
 /* 인기 계정 랭킹 */
 .ranking {
 }
-.ranking .r-menu {
-  display: flex;
-  justify-content: left;
+.ranking-list{
+  padding-top: 30px;
 }
-.ranking .r-menu li {
+.ranking-list ul{}
+.ranking-list ul li{
+  position: relative;
+  background: #f8f8f8;
+  height: 70px;
+  border-radius: 4px;
+  padding: 20px 25px;
+  overflow: hidden;
 }
+.ranking-list .count{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  line-height: 24px;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  border-radius: 4px 0;
+  background: #009a3e;
+}
+.ranking-list .list-top{}
+.ranking-list .list-top a{}
+.ranking-list .list-top a span{
+  float: left;
+}
+.ranking-list .list-top a .profile-img{
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 0.5px solid #d9d9d9;
+  overflow: hidden;
+}
+.ranking-list .list-top a .profile-img img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ranking-list .list-top a .profile-name{
+  position: relative;
+  top: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ranking-list .list-top a:hover .profile-name{
+  text-decoration: underline;
+}
+.ranking-list .list-top .follow-btn{
+  position: relative;
+  top: 9px;
+  font-size: 13px;
+  color: #009a3e;
+  border: 0;
+  margin-left: 17px;
+  background: transparent;
+  cursor: pointer;
+}
+.ranking-list .list-top .follow-btn::before{
+  content: "";
+  display: inline-block;
+  font-size: 0;
+  width: 4px;
+  height: 4px;
+  background: #b3b3b3;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.ranking-list .list-bottom{
+  margin-top: 20px;
+}
+.ranking-list .list-bottom p{
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #808080;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/* 확인 필요 */
 .story .active {
   color: #fff !important;
   background-color: #009a3e !important;
@@ -577,6 +712,7 @@ section.quick {
 .story .s-menu li a:hover {
   background: #d9d9d9;
 }
+/*// 확인 필요 */
 
 /* 싱그런 여행 */
 .travel {
