@@ -58,6 +58,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js"></script>
   </head>
   <body>
 
@@ -123,10 +124,13 @@
             <div class="top-right">
               <ul>
                 <li>
-                  <a href="#"> 로그인 </a>
+                  <a href="#">로그인</a>
                 </li>
                 <li>
-                  <a href="#"> 판매자 신청 </a>
+                  <a href="#">회원가입</a>
+                </li>
+                <li>
+                  <a href="#">판매자 신청</a>
                 </li>
               </ul>
             </div>
@@ -144,118 +148,7 @@
                 <div class="sitemap">
                   <button class="sitemap-btn">
                     <span class="sound_only">사이트맵</span>
-                  </button>
-                  <div class="sitemap-list-wrap">
-                    <div class="sitemap-list-box">
-                      <div class="inner">
-                        <ul class="sitemap-list">
-                          <li>
-                            <div class="list-top">
-                              <a href="#" class="sitemap-gnb">스토어</a>
-                            </div>
-                            <div class="list-bottom">
-                              <ul>
-                                <li>
-                                  <a href="#">카테고리</a>
-                                  <ul class="sitemap-lnb">
-                                    <li>
-                                      <a href="#">희귀식물</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">식물/플라워</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">플랜테리어</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">가드닝용품</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">DIY/체험</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">친환경</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">기타</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">100원딜</a>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <a href="#">베스트</a>
-                                </li>
-                                <li>
-                                  <a href="#">기획전</a>
-                                </li>
-                                <li>
-                                  <a href="#">이벤트</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list-top">
-                              <a href="#" class="sitemap-gnb">커뮤니티</a>
-                            </div>
-                            <div class="list-bottom">
-                              <ul>
-                                <li>
-                                  <a href="#">스토리</a>
-                                  <ul class="sitemap-lnb">
-                                    <li>
-                                      <a href="#">식물/플라워</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">플랜테리어</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">가드닝용품</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">싱그런 여행</a>
-                                    </li>
-                                    <li>
-                                      <a href="#">친환경라이프</a>
-                                    </li>
-                                  </ul>
-                                </li>
-                                <li>
-                                  <a href="#">싱싱튜브</a>
-                                </li>
-                                <li>
-                                  <a href="#">가이드</a>
-                                </li>
-                                <li>
-                                  <a href="#">매거진</a>
-                                </li>
-                                <li>
-                                  <a href="#">조경/시공</a>
-                                </li>
-                              </ul>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list-top">
-                              <a href="#" class="sitemap-gnb">싱그런 여행</a>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list-top">
-                              <a href="#" class="sitemap-gnb">조경/시공</a>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="list-top">
-                              <a href="#" class="sitemap-gnb">식물마켓</a>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  </button>                  
                 </div>
                 <div class="gnb">
                   <ul>
@@ -283,15 +176,18 @@
               <div class="right">
                 <div class="mypg">
                   <div class="mypg-btn-wrap">
-                    <a href="#">
+                    <a href="#" class="btn-scrap">
+                      <img src="images/scrap_btn.png" alt="스크랩"/>
+                    </a>
+                    <a href="#" class="btn-mypg">
                       <img src="images/mypg_btn.png" alt="마이페이지" />
                       <img src="images/mypg_btn_hover.png" alt="마이페이지" />
                     </a>
-                    <a href="#">
+                    <a href="#" class="btn-cart">
                       <img src="images/cart_btn.png" alt="장바구니" />
                       <img src="images/cart_btn_hover.png" alt="장바구니" />
                     </a>
-                    <a href="#">
+                    <a href="#" class="btn-write">
                       <img src="images/write_btn.png" alt="글쓰기" />
                       <img src="images/write_btn_hover.png" alt="글쓰기" />
                     </a>
@@ -311,7 +207,277 @@
             </nav>
           </div>
         </div>
+        <div class="sitemap-list-wrap">
+          <div class="sitemap-list-box">
+            <div class="inner">
+              <ul class="sitemap-list">
+                <li>
+                  <div class="list-top">
+                    <a href="#" class="sitemap-gnb">스토어</a>
+                  </div>
+                  <div class="list-bottom">
+                    <ul>
+                      <li>
+                        <a href="#">카테고리</a>
+                        <ul class="sitemap-lnb">
+                          <li>
+                            <a href="#">희귀식물</a>
+                          </li>
+                          <li>
+                            <a href="#">식물/플라워</a>
+                          </li>
+                          <li>
+                            <a href="#">플랜테리어</a>
+                          </li>
+                          <li>
+                            <a href="#">가드닝용품</a>
+                          </li>
+                          <li>
+                            <a href="#">DIY/체험</a>
+                          </li>
+                          <li>
+                            <a href="#">친환경</a>
+                          </li>
+                          <li>
+                            <a href="#">기타</a>
+                          </li>
+                          <li>
+                            <a href="#">100원딜</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">베스트</a>
+                      </li>
+                      <li>
+                        <a href="#">기획전</a>
+                      </li>
+                      <li>
+                        <a href="#">이벤트</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-top">
+                    <a href="#" class="sitemap-gnb">커뮤니티</a>
+                  </div>
+                  <div class="list-bottom">
+                    <ul>
+                      <li>
+                        <a href="#">스토리</a>
+                        <ul class="sitemap-lnb">
+                          <li>
+                            <a href="#">식물/플라워</a>
+                          </li>
+                          <li>
+                            <a href="#">플랜테리어</a>
+                          </li>
+                          <li>
+                            <a href="#">가드닝용품</a>
+                          </li>
+                          <li>
+                            <a href="#">싱그런 여행</a>
+                          </li>
+                          <li>
+                            <a href="#">친환경라이프</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">싱싱튜브</a>
+                      </li>
+                      <li>
+                        <a href="#">가이드</a>
+                      </li>
+                      <li>
+                        <a href="#">매거진</a>
+                      </li>
+                      <li>
+                        <a href="#">조경/시공</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-top">
+                    <a href="#" class="sitemap-gnb">싱그런 여행</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-top">
+                    <a href="#" class="sitemap-gnb">조경/시공</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-top">
+                    <a href="#" class="sitemap-gnb">식물마켓</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 모바일 사이트맵 -->
+          <div class="m-sitemap-list-container">
+            <div class="m-list-box">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_google.png"
+                      alt="안드로이드 앱 다운로드"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/icon_h_apple.png" alt="iOS 앱 다운로드" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_insta.png"
+                      alt="인스타그램 바로가기"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_kakao.png"
+                      alt="카카오 채널 바로가기"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_facebook.png"
+                      alt="페이스북 바로가기"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_youtube.png"
+                      alt="유튜브 바로가기"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <button class="m-closed-btn">
+                <span class="sound_only">닫기</span>
+              </button>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-login-btn">
+                <li>
+                  <a href="#">
+                    로그인
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    로그인
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-quick-menu">
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-tab-btn">
+                <li class="on">
+                  <a href="#">스토어</a>
+                </li>
+                <li>
+                  <a href="#">스토어</a>
+                </li>
+              </ul>
+              <ul class="m-tab-list">
+                <li>
+                  <a href="#">홈</a>
+                </li>
+                <li>
+                  <a href="#">카테고리</a>
+                </li>
+                <li>
+                  <a href="#">베스트</a>
+                </li>
+                <li>
+                  <a href="#">기획전</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+              </ul>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-apply">
+                <li>
+                  <a href="#">판매자 신청</a>
+                </li>
+                <li>
+                  <a href="#">사업자 구매회원 신청</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </header>
+      <div class="sitemap-bgc"></div>
       <!-- //상단 -->
       <!-- 비주얼 -->
       <section class="visual">
@@ -364,26 +530,7 @@
               <div class="v-pg"></div>
               <div class="v-btn v-next"></div>
             </div>
-          </div>
-          <!-- v-swiper -->
-          <script>
-            var swiper = new Swiper(".v-swiper", {
-              loop: true,
-              speed: 500,
-              autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".v-pg",
-                type: "fraction",
-              },
-              navigation: {
-                nextEl: ".v-next",
-                prevEl: ".v-prev",
-              },
-            });
-          </script>
+          </div>          
         </div>
       </section>
       <!-- //비주얼 -->
@@ -691,7 +838,7 @@
       <section class="story ranking">
         <div class="inner">
           <div class="section-title">
-            <h3 class="subtitle">인기 계정 랭킹</h3>            
+            <h3 class="subtitle">인기 계정 랭킹</h3>
           </div>
           <div class="s-tab">
             <ul class="s-menu clearfix">
@@ -706,11 +853,12 @@
                 <div class="list-top">
                   <a href="#">
                     <span class="profile-img">
-                      <img src="images/ranking/ranking_img_1.jpg" alt="프로필 사진">
+                      <img
+                        src="images/ranking/ranking_img_1.jpg"
+                        alt="프로필 사진"
+                      />
                     </span>
-                    <span class="profile-name">
-                      김베르
-                    </span>
+                    <span class="profile-name"> 김베르 </span>
                   </a>
                   <button class="follow-btn">팔로우</button>
                 </div>
@@ -860,87 +1008,123 @@
           </div>
           <div class="tube-gallery">
             <ul>
-              <li class="tube-list">
-                <div class="tube-thumb">
-                  <a href="#" class="tube-link">
-                    <div class="tube-img">
-                      <span class="t-bt">01:13</span>
-                      <button class="t-bookmark">
-                        <img src="images/icon_bookmark.png" alt="scrap" />
-                      </button>
-                    </div>
-                    <p>그린데이즈와 함께하는 식물 언박싱 - 릴리안스러움</p>
-                  </a>
-                </div>
+              <li>
+                <a href="#" class="tube-link">
+                  <div class="tube-img">
+                    <img
+                      src="images/tube/tube1.png"
+                      alt="튜브사진"
+                      class="tube-img"
+                    />
+                    <span class="play"></span>
+                    <span class="t-bt">02:54</span>
+                    <button class="t-bookmark">
+                      <img src="images/icon_bookmark.png" alt="scrap" />
+                    </button>
+                  </div>
+                  <p>
+                    [무늬가 예쁜 식물 Best 5] #키우기쉬운식물​ #예쁜식물​
+                    @푸르름TV
+                  </p>
+                </a>
               </li>
 
-              <li class="tube-list">
-                <div class="tube-thumb">
-                  <a href="#" class="tube-link">
-                    <div class="tube-img">
-                      <span class="t-bt">01:13</span>
-                      <button class="t-bookmark">
-                        <img src="images/icon_bookmark.png" alt="scrap" />
-                      </button>
-                    </div>
-                    <p>그린데이즈와 함께하는 식물 언박싱 - 릴리안스러움</p>
-                  </a>
-                </div>
-              </li>
-              <li class="tube-list">
-                <div class="tube-thumb">
-                  <a href="#" class="tube-link">
-                    <div class="tube-img">
-                      <span class="t-bt">01:13</span>
-                      <button class="t-bookmark">
-                        <img src="images/icon_bookmark.png" alt="scrap" />
-                      </button>
-                    </div>
-                    <p>그린데이즈와 함께하는 식물 언박싱 - 릴리안스러움</p>
-                  </a>
-                </div>
-              </li>
-            </ul>
-            <ul>
-              <li class="tube-list">
-                <div class="tube-thumb">
-                  <a href="#" class="tube-link">
-                    <div class="tube-img">
-                      <span class="t-bt">01:13</span>
-                      <button class="t-bookmark">
-                        <img src="images/icon_bookmark.png" alt="scrap" />
-                      </button>
-                    </div>
-                    <p>그린데이즈와 함께하는 식물 언박싱 - 릴리안스러움</p>
-                  </a>
-                </div>
+              <li>
+                <a href="#" class="tube-link">
+                  <div class="tube-img">
+                    <img
+                      src="images/tube/tube2.png"
+                      alt="튜브사진"
+                      class="tube-img"
+                    />
+                    <span class="play"></span>
+                    <span class="t-bt">01:33</span>
+                    <button class="t-bookmark">
+                      <img src="images/icon_bookmark.png" alt="scrap" />
+                    </button>
+                  </div>
+                  <p>[홈가드닝]우리 집 반려식물 소개</p>
+                </a>
               </li>
 
-              <li class="tube-list">
-                <div class="tube-thumb">
-                  <a href="#" class="tube-link">
-                    <div class="tube-img">
-                      <span class="t-bt">01:13</span>
-                      <button class="t-bookmark">
-                        <img src="images/icon_bookmark.png" alt="scrap" />
-                      </button>
-                    </div>
-                    <p>그린데이즈와 함께하는 식물 언박싱 - 릴리안스러움</p>
-                  </a>
-                </div>
+              <li>
+                <a href="#" class="tube-link">
+                  <div class="tube-img">
+                    <img
+                      src="images/tube/tube3.png"
+                      alt="튜브사진"
+                      class="tube-img"
+                    />
+                    <span class="play"></span>
+                    <span class="t-bt">05:30</span>
+                    <button class="t-bookmark">
+                      <img src="images/icon_bookmark.png" alt="scrap" />
+                    </button>
+                  </div>
+                  <p>
+                    [스킨답서스 분갈이]플로리스트 로만일상,식물과습,아픈 식물
+                    치료하는 힐링 브이로그.vlog
+                  </p>
+                </a>
               </li>
-              <li class="tube-list">
-                <div class="tube-thumb">
-                  <a href="#" class="tube-link">
-                    <div class="tube-img">
-                      <span class="t-bt">01:13</span>
-                      <button class="t-bookmark">
-                        <img src="images/icon_bookmark.png" alt="scrap" />
-                      </button>
-                    </div>
-                    <p>그린데이즈와 함께하는 식물 언박싱 - 릴리안스러움</p>
-                  </a>
-                </div>
+
+              <li>
+                <a href="#" class="tube-link">
+                  <div class="tube-img">
+                    <img
+                      src="images/tube/tube4.png"
+                      alt="튜브사진"
+                      class="tube-img"
+                    />
+                    <span class="play"></span>
+                    <span class="t-bt">01:35</span>
+                    <button class="t-bookmark">
+                      <img src="images/icon_bookmark.png" alt="scrap" />
+                    </button>
+                  </div>
+                  <p>
+                    [테라리움]생소하고 처음보는 미니분경만의 테라리움 작품들!!
+                  </p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="tube-link">
+                  <div class="tube-img">
+                    <img
+                      src="images/tube/tube5.png"
+                      alt="튜브사진"
+                      class="tube-img"
+                    />
+                    <span class="play"></span>
+                    <span class="t-bt">01:17</span>
+                    <button class="t-bookmark">
+                      <img src="images/icon_bookmark.png" alt="scrap" />
+                    </button>
+                  </div>
+                  <p>[플렌테리어]대형알로카시아 하나로 우리집 분위기 전환</p>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="tube-link">
+                  <div class="tube-img">
+                    <img
+                      src="images/tube6.png"
+                      alt="튜브사진"
+                      class="tube-img"
+                    />
+                    <span class="play"></span>
+                    <span class="t-bt">03:52</span>
+                    <button class="t-bookmark">
+                      <img src="images/icon_bookmark.png" alt="scrap" />
+                    </button>
+                  </div>
+                  <p>
+                    [식사남TV] HD 무늬아단소니 분갈이/ 카네즈센토분 리뷰/ 자취방
+                    분갈이/ 조용한 분갈이/ 식물 분갈이ASMR
+                  </p>
+                </a>
               </li>
             </ul>
           </div>
@@ -1014,14 +1198,21 @@
                 <li>
                   <a href="#" class="list-top">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick1.jpg" alt="유주나무">
+                      <img src="./images/mdpick/mdpick1.jpg" alt="유주나무" />
                       <button>
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
-                      <p>[샤이니_키] 유주나무 실내 공기정화식물 유주나무 독일토분 & 테라코타 나폴리 토분</p>
-                      <div class="discount-text"> 
+                      <p>
+                        [샤이니_키] 유주나무 실내 공기정화식물 유주나무 독일토분
+                        & 테라코타 나폴리 토분
+                      </p>
+                      <div class="discount-text">
                         <span class="discount">57%</span>
                         <span class="price">159,500</span>
                         <span>67,000</span>
@@ -1032,13 +1223,23 @@
                 <li>
                   <a href="#" class="list-top">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick2.jpg" alt="인테리어식물">
+                      <img
+                        src="./images/mdpick/mdpick2.jpg"
+                        alt="인테리어식물"
+                      />
                       <button>
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
-                      <p>플라랜드 공기정화 인테리어식물 딸기코 만세선인장 핑크선인장 테라조 대리석화분</p>
+                      <p>
+                        플라랜드 공기정화 인테리어식물 딸기코 만세선인장
+                        핑크선인장 테라조 대리석화분
+                      </p>
                       <div class="discount-text">
                         <span class="discount">85%</span>
                         <span class="price">69,000</span>
@@ -1050,9 +1251,16 @@
                 <li>
                   <a href="#" class="list-top">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick3.jpg" alt="여우꼬리선인장">
+                      <img
+                        src="./images/mdpick/mdpick3.jpg"
+                        alt="여우꼬리선인장"
+                      />
                       <button>
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
@@ -1068,13 +1276,23 @@
                 <li>
                   <a href="#" class="list-top">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick4.jpg" alt="공기정화식물">
+                      <img
+                        src="./images/mdpick/mdpick4.jpg"
+                        alt="공기정화식물"
+                      />
                       <button>
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
-                      <p>[전국배송] 플라랜드 공기정화 식물 곡선 라인 황칠나무 줄무늬화분 단지 볼 묘목</p>
+                      <p>
+                        [전국배송] 플라랜드 공기정화 식물 곡선 라인 황칠나무
+                        줄무늬화분 단지 볼 묘목
+                      </p>
                       <div class="discount-text">
                         <span class="discount"></span>
                         <span>119,000</span>
@@ -1087,14 +1305,21 @@
                 <li>
                   <a href="#" class="list-down">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick5.jpg" alt="춘봉철화">
+                      <img src="./images/mdpick/mdpick5.jpg" alt="춘봉철화" />
                       <button>
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
-                      <p>춘봉철화 접목선인장(화이트고스트, 핑크고스트) 이태리토분 세트</p>
-                      <div class="discount-text"> 
+                      <p>
+                        춘봉철화 접목선인장(화이트고스트, 핑크고스트) 이태리토분
+                        세트
+                      </p>
+                      <div class="discount-text">
                         <span class="discount">10%</span>
                         <span class="price">32,000</span>
                         <span>29,000</span>
@@ -1105,9 +1330,13 @@
                 <li>
                   <a href="#" class="list-down">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick7.jpg" alt="테라몽드">
+                      <img src="./images/mdpick/mdpick7.jpg" alt="테라몽드" />
                       <button>
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
@@ -1122,13 +1351,20 @@
                 <li>
                   <a href="#" class="list-down">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick6.jpg" alt="장미조화">
+                      <img src="./images/mdpick/mdpick6.jpg" alt="장미조화" />
                       <button>
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
-                      <p>말린 장미 조화 꽃다발 장미꽃 드라이플라워 꽃꽂이재료 꽃 장식 부케 인테리어 실크플라워</p>
+                      <p>
+                        말린 장미 조화 꽃다발 장미꽃 드라이플라워 꽃꽂이재료 꽃
+                        장식 부케 인테리어 실크플라워
+                      </p>
                       <div class="discount-text">
                         <span class="discount">55%</span>
                         <span class="price">17,000</span>
@@ -1140,14 +1376,22 @@
                 <li>
                   <a href="#" class="list-down">
                     <div class="img">
-                      <img src="./images/mdpick/mdpick8.png" alt="공기정화식물">
+                      <img
+                        src="./images/mdpick/mdpick8.png"
+                        alt="공기정화식물"
+                      />
                       <button>
-
-                        <img src="./images/icon_bookmark.png" alt="북마크" class="pick-bookmark">
+                        <img
+                          src="./images/icon_bookmark.png"
+                          alt="북마크"
+                          class="pick-bookmark"
+                        />
                       </button>
                     </div>
                     <div class="text">
-                      <p>[식물행성] 여우꼬리철화 미니밍크선인장 이태리토분 세트</p>
+                      <p>
+                        [식물행성] 여우꼬리철화 미니밍크선인장 이태리토분 세트
+                      </p>
                       <div class="discount-text">
                         <span class="discount">10%</span>
                         <span class="price">20,000</span>
@@ -1162,7 +1406,7 @@
           <div class="pick-bottom"></div>
         </div>
       </section>
-    
+
       <!-- //MD's Pick -->
       <!-- 가이드북 -->
       <section class="guide">
@@ -1220,7 +1464,7 @@
               </script>
           </div>
         </div>
-        
+
       </section>
       <!-- //가이드북 -->
       <!-- 싱그러움을 전해보세요 -->
@@ -1242,6 +1486,23 @@
         
       </section>
       <!-- //싱그러움을 전해보세요 -->
+      <!-- 메인화면 고정 퀵메뉴 -->
+      <ul class="fix-quick-menu">
+        <li>
+          <a href="#" class="kakao-btn">
+            <img src="images/icon_fix_kakao.png" alt="카카오채널 바로가기" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="top-btn">
+            <span>
+              <i class="icon-top"></i>
+              TOP
+            </span>
+          </a>
+        </li>
+      </ul>
+      <!--// 메인화면 퀵메뉴 -->
       <!-- 하단 -->
       <footer class="footer">
         <div class="inner">
@@ -1310,25 +1571,8 @@
           </div>
         </div>
       </footer>
-      <!-- //하단 -->
+      <!-- //하단 -->      
     </div>
-    <!-- //전체 레이아웃 끝 -->
-    <!-- 메인화면 고정 퀵메뉴 -->
-    <ul class="fix-quick-menu">
-      <li>
-        <a href="#" class="kakao-btn">
-          <img src="images/icon_fix_kakao.png" alt="카카오채널 바로가기" />
-        </a>
-      </li>
-      <li>
-        <a href="#" class="top-btn">
-          <span>
-            <i class="icon-top"></i>
-            TOP
-          </span>
-        </a>
-      </li>
-    </ul>
-    <!--// 메인화면 퀵메뉴 -->
+    <!-- //전체 레이아웃 끝 -->    
   </body>
 </html>
