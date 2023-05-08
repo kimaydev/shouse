@@ -60,6 +60,11 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+
+    <div class="box">
+     <div class="ball"></div>
+    </div>
+
     <!-- 전체 레이아웃 시작 -->
     <div class="wrap">
       <!-- 상단 -->
@@ -1163,26 +1168,78 @@
       <section class="guide">
         <div class="inner">
           <h3 class="guide-title">가이드북</h3>
-        </div>
-        <div class="guide-slide">
-          <ul class="guide-img-list">
-            <li>
-              <a href="#">
-                <div class="guide-img">
-                  <img src="./images/guide/guide1.png" alt="">
+          <div class="guide-slide">
+            <div class="guide-swiper">
+              <button class="sw-bt sw-prev">이전</button>
+              <button class="sw-bt sw-next">다음</button>
+              <div class="swiper sw-guide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#" class="guide-layout">
+                      <div class="guide-img">
+                        <img src="./images/guide/guide1.png" alt="싱그러운 희귀식물 마켓">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="guide-layout">
+                      <div class="guide-img">
+                        <img src="./images/guide/guide2.png" alt="싱그러운 희귀식물 마켓">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#" class="guide-layout">
+                      <div class="guide-img">
+                        <img src="./images/guide/guide3.png" alt="싱그러운 희귀식물 마켓">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="guide-img">
+                        <img src="./images/guide/guide4.png" alt="싱그러운 희귀식물 마켓">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <div class="guide-img">
+                        <img src="./images/guide/guide5.png" alt="싱그러운 희귀식물 마켓">
+                      </div>
+                    </a>
+                  </div>
                 </div>
-              </a>
-            </li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+              </div>
+              <!-- guide slide -->
+              <script>
+                new Swiper(".sw-guide", {
+                  slidesPerView: 4,
+                  spaceBetween: 15
+                })
+              </script>
+          </div>
         </div>
+        
       </section>
       <!-- //가이드북 -->
       <!-- 싱그러움을 전해보세요 -->
       <section class="cs">
-        <div class="inner"></div>
+        <div class="inner clearfix  ">
+          <h3 class="cs-title">싱그러움을 전해보세요</h3>
+          <div class="cs-box1">
+            <p class="seller-title">판매자 신청</p>
+            <p class="desc">싱그러운집과 함께 해요</p>
+            <img src="./images/icon_color_4.png" alt="집아이콘" class="cs-icon">
+          </div>
+          <div class="cs-box2">
+            <p class="seller-title">사업자 구매회원 신청</p>
+            <p class="desc">VVIP혜택을 누려보세요</p>
+            <img src="./images/icon_color_3.png" alt="집아이콘" class="cs-icon">
+          </div>
+        </div>
+        
+        
       </section>
       <!-- //싱그러움을 전해보세요 -->
       <!-- 하단 -->
