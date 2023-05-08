@@ -202,46 +202,46 @@ a {
   background-color: #fff;
 }
 
-.header .bottom .nav .left .sitemap-list{
+.header .bottom .nav .left .sitemap-list {
   display: flex;
   justify-content: space-between;
 }
-.header .bottom .nav .left .sitemap-list > li{
-  width: 100%;  
+.header .bottom .nav .left .sitemap-list > li {
+  width: 100%;
   padding: 20px 45px 50px;
   border-right: 0.5px solid #f2f2f2;
 }
-.header .bottom .nav .left .sitemap-list > li:first-child{
+.header .bottom .nav .left .sitemap-list > li:first-child {
   border-left: 0.5px solid #f2f2f2;
 }
-.header .bottom .nav .left .sitemap-list a{
+.header .bottom .nav .left .sitemap-list a {
   display: block;
 }
-.header .bottom .nav .left .sitemap-list .list-top{
-  
+.header .bottom .nav .left .sitemap-list .list-top {
 }
-.header .bottom .nav .left .sitemap-list .sitemap-gnb{
+.header .bottom .nav .left .sitemap-list .sitemap-gnb {
   font-size: 20px;
   font-weight: 700;
   padding: 20px 0;
 }
-.header .bottom .nav .left .sitemap-list .list-bottom{}
-.header .bottom .nav .left .sitemap-list .list-bottom a{  
+.header .bottom .nav .left .sitemap-list .list-bottom {
+}
+.header .bottom .nav .left .sitemap-list .list-bottom a {
   color: #4d4d4d;
 }
-.header .bottom .nav .left .sitemap-list .list-bottom > ul > li{}
-.header .bottom .nav .left .sitemap-list .list-bottom > ul > li > a{
+.header .bottom .nav .left .sitemap-list .list-bottom > ul > li {
+}
+.header .bottom .nav .left .sitemap-list .list-bottom > ul > li > a {
   font-size: 15px;
   font-weight: 700;
   padding: 10px 0;
 }
-.header .bottom .nav .left .sitemap-list .list-bottom .sitemap-lnb{
+.header .bottom .nav .left .sitemap-list .list-bottom .sitemap-lnb {
   margin-left: 10px;
   font-size: 14px;
 }
-.header .bottom .nav .left .sitemap-list .list-bottom .sitemap-lnb li a{
+.header .bottom .nav .left .sitemap-list .list-bottom .sitemap-lnb li a {
   padding: 5px 0;
-
 }
 
 .header .bottom .nav .left .gnb {
@@ -593,11 +593,12 @@ section.quick {
 /* 인기 계정 랭킹 */
 .ranking {
 }
-.ranking-list{
+.ranking-list {
   padding-top: 30px;
 }
-.ranking-list ul{}
-.ranking-list ul li{
+.ranking-list ul {
+}
+.ranking-list ul li {
   position: relative;
   background: #f8f8f8;
   height: 70px;
@@ -605,7 +606,7 @@ section.quick {
   padding: 20px 25px;
   overflow: hidden;
 }
-.ranking-list .count{
+.ranking-list .count {
   position: absolute;
   top: 0;
   left: 0;
@@ -618,12 +619,14 @@ section.quick {
   border-radius: 4px 0;
   background: #009a3e;
 }
-.ranking-list .list-top{}
-.ranking-list .list-top a{}
-.ranking-list .list-top a span{
+.ranking-list .list-top {
+}
+.ranking-list .list-top a {
+}
+.ranking-list .list-top a span {
   float: left;
 }
-.ranking-list .list-top a .profile-img{
+.ranking-list .list-top a .profile-img {
   position: relative;
   width: 70px;
   height: 70px;
@@ -633,7 +636,7 @@ section.quick {
   border: 0.5px solid #d9d9d9;
   overflow: hidden;
 }
-.ranking-list .list-top a .profile-img img{
+.ranking-list .list-top a .profile-img img {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -644,7 +647,7 @@ section.quick {
   height: 100%;
   object-fit: cover;
 }
-.ranking-list .list-top a .profile-name{
+.ranking-list .list-top a .profile-name {
   position: relative;
   top: 10px;
   font-size: 18px;
@@ -654,10 +657,10 @@ section.quick {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.ranking-list .list-top a:hover .profile-name{
+.ranking-list .list-top a:hover .profile-name {
   text-decoration: underline;
 }
-.ranking-list .list-top .follow-btn{
+.ranking-list .list-top .follow-btn {
   position: relative;
   top: 9px;
   font-size: 13px;
@@ -667,7 +670,7 @@ section.quick {
   background: transparent;
   cursor: pointer;
 }
-.ranking-list .list-top .follow-btn::before{
+.ranking-list .list-top .follow-btn::before {
   content: "";
   display: inline-block;
   font-size: 0;
@@ -682,10 +685,10 @@ section.quick {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.ranking-list .list-bottom{
+.ranking-list .list-bottom {
   margin-top: 20px;
 }
-.ranking-list .list-bottom p{
+.ranking-list .list-bottom p {
   font-size: 15px;
   font-weight: 300;
   line-height: 1.2;
@@ -694,8 +697,6 @@ section.quick {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-
 
 /* 확인 필요 */
 .story .active {
@@ -830,59 +831,95 @@ section.quick {
 }
 .singtube .tube-gallery {
 }
-.singtube ul {
+.singtube .tube-gallery ul {
   display: flex;
-  gap: 20px;
+  gap: 40px 20px;
+  flex-wrap: wrap;
 }
-.singtube .tube-list {
-  width: calc(100% / 3);
+.singtube .tube-gallery ul li {
+  width: calc(94% / 3);
 }
-.singtube .tube-list .tube-thumb {
-}
-.singtube .tube-list .tube-thumb .tube-link {
-  display: inline-block;
-  margin-top: 5px;
+.singtube .tube-gallery ul li a {
   width: 100%;
 }
-.singtube .tube-list .tube-thumb .tube-link .tube-img {
-  position: relative;
-  background: url("../images/tube/tube1.png") no-repeat center;
-  width: 100%;
-  height: 225px;
-  border: 0;
-  border-radius: 5px;
+.singtube .tube-gallery ul li a .tube-img {
+  border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  margin-bottom: 21px;
+  height: 223px;
 }
-.singtube .tube-list .tube-thumb .tube-link .tube-img .t-bt {
+.singtube .tube-gallery ul li a .tube-img::after {
+  content: "";
+  display: block;
+  padding-bottom: 55%;
+}
+.singtube .tube-gallery ul li a .tube-img > img {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  padding-right: 7px;
-  padding-left: 7px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #fff;
-  font-size: 12px;
-  background: #000;
-  border-radius: 0 5px;
-}
-.singtube .tube-list .tube-thumb .tube-link .tube-img .t-bookmark {
-  position: absolute;
-  right: 9px;
-  bottom: 10px;
-  padding: 0px 7px;
-  background: transparent;
-  border: 0;
-  width: 45px;
-}
-.singtube .tube-list .tube-thumb .tube-link .tube-img .t-bookmark img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.singtube .tube-list .tube-thumb .tube-link p {
-  margin-top: 20px;
+.singtube .tube-gallery ul li a .tube-img .t-bt {
+  position: absolute;
+  z-index: 11;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 0px 4px 0 0;
+  color: #fff;
+  padding: 0 7px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.singtube .tube-gallery ul li a p {
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 300;
-  color: #4d4d4d;
+  margin: 21px 0 -3px;
+}
+
+.singtube .tube-gallery .tube-link .tube-img .play {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 100%;
+  z-index: 11;
+}
+.singtube .tube-gallery .tube-link .tube-img .play:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  left: calc(50% - 4px);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #222624;
+}
+.singtube .tube-gallery ul li a .tube-img button {
+  position: absolute;
+  z-index: 11;
+  right: 10px;
+  bottom: 6px;
+  width: 43px;
+  height: 42px;
+  border: none;
+  background: none;
+}
+.singtube .tube-gallery ul li a .tube-img button img {
+  width: 100%;
+  height: 100%;
+}
+.singtube .tube-gallery ul li a:hover .tube-img > img {
+  transition: all 1s;
+  transform: scale(1.07);
+}
+.singtube .tube-gallery ul li a:hover p {
+  text-decoration: underline;
 }
 
 /* HOT Keyword */
@@ -927,15 +964,18 @@ section.quick {
 /* MD's Pick */
 .pick {
 }
-.pick .inner {}
-.pick .pick-top {}
+.pick .inner {
+}
+.pick .pick-top {
+}
 .pick-title {
   line-height: 63px;
   font-size: 25px;
   font-weight: 700;
   color: #222624;
 }
-.pick .pick-middle {}
+.pick .pick-middle {
+}
 .pick .pick-middle .pick-img .pick-list {
   display: flex;
   flex-wrap: wrap;
@@ -943,11 +983,10 @@ section.quick {
 }
 .pick .pick-middle .pick-img .pick-list li {
   width: calc(100% / 4 - 20px);
-  margin-right: 20px
-
+  margin-right: 20px;
 }
 .pick .pick-middle .pick-img .pick-list li:last-child {
-  margin-right: 10px
+  margin-right: 10px;
 }
 .pick .list-top .img {
   position: relative;
@@ -987,7 +1026,6 @@ section.quick {
   font-size: 14px;
   color: #808080;
   margin-top: 21px;
-  
 }
 .pick .list-down .img {
   position: relative;
@@ -1001,7 +1039,6 @@ section.quick {
   right: 10px;
   bottom: 10px;
   background-size: 31px auto;
-  
 }
 .pick .list-down .img img {
   width: 100%;
@@ -1023,7 +1060,6 @@ section.quick {
   font-size: 14px;
   color: #808080;
   margin-top: 21px;
-  
 }
 
 .pick .pick-middle .list-down .text .discount {
@@ -1035,8 +1071,10 @@ section.quick {
   color: #b3b3b3;
   margin: 0 4px 0 0;
 }
-.pick .pick-list {}
-.pick .pick-bottom {}
+.pick .pick-list {
+}
+.pick .pick-bottom {
+}
 
 /* 가이드북 */
 section.guide {
@@ -1044,8 +1082,10 @@ section.guide {
   /* height: auto; */
   padding: 60px 0 80px;
 }
-.guide {}
-.guide .inner {}
+.guide {
+}
+.guide .inner {
+}
 .guide .guide-title {
   line-height: 63px;
   font-size: 25px;
