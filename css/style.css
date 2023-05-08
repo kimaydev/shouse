@@ -628,30 +628,132 @@ section.quick {
 /* MD's Pick */
 .pick {
 }
-.clearfix::after {
-  content: "";
-  position: relative;
-  display: block;
-  width: 100%;
-  clear: both;
-}
+.pick .inner {}
+.pick .pick-top {}
 .pick-title {
+  line-height: 63px;
   font-size: 25px;
   font-weight: 700;
   color: #222624;
-  line-height: 63px;
 }
-.plants-top-img > li {
-  width: calc(100% / 4);
-  float: left;
+.pick .pick-middle {}
+.pick .pick-middle .pick-img .pick-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
-.plants-bottom-img > li {
-  width: calc(100% / 4);
-  float: left;
+.pick .pick-middle .pick-img .pick-list li {
+  width: calc(100% / 4 - 20px);
+  margin-right: 20px
+
+}
+.pick .pick-middle .pick-img .pick-list li:last-child {
+  margin-right: 10px
+}
+.pick .list-top .img {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+.pick .list-top .img .pick-bookmark {
+  position: absolute;
+  width: 33px;
+  height: auto;
+  right: 10px;
+  bottom: 10px;
+  background-size: 31px auto;
+}
+.pick .list-top .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.pick .list-top .text {
+  margin: 20px 0;
+}
+.pick .pick-middle .list-top .text .discount {
+  color: #e05438;
+  font-size: 20px;
+  font-weight: 500;
+}
+.pick .list-top .text .price {
+  text-decoration: line-through;
+}
+.pick .pick-middle .list-top .text p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 14px;
+  color: #808080;
+  margin-top: 21px;
+  
+}
+.pick .list-down .img {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+.pick .list-down .img .pick-bookmark {
+  position: absolute;
+  width: 33px;
+  height: auto;
+  right: 10px;
+  bottom: 10px;
+  background-size: 31px auto;
+  
+}
+.pick .list-down .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.pick .list-down .text {
+  margin: 20px 0;
+}
+.pick .list-down .text .price {
+  text-decoration: line-through;
+}
+.pick .pick-middle .list-down .text p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 20px;
+  font-size: 14px;
+  color: #808080;
+  margin-top: 21px;
+  
 }
 
+.pick .pick-middle .list-down .text .discount {
+  color: #e05438;
+  font-size: 20px;
+  font-weight: 500;
+}
+.pick .price {
+  color: #b3b3b3;
+  margin: 0 4px 0 0;
+}
+.pick .pick-list {}
+.pick .pick-bottom {}
+
 /* 가이드북 */
-.guide {
+section.guide {
+  background-color: #f2f2f2;
+  /* height: auto; */
+  padding: 60px 0 80px;
+}
+.guide {}
+.guide .inner {}
+.guide .guide-title {
+  line-height: 63px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #222624;
+}
+.guide .guide-img-list .guide-img img {
 }
 
 /* 싱그러움을 전해보세요 */
