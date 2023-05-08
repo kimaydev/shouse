@@ -915,8 +915,8 @@ section.quick {
   height: 100%;
 }
 .singtube .tube-gallery ul li a:hover .tube-img > img {
-  transition: all 1s;
-  transform: scale(1.07);
+  transition: all 0.6s;
+  transform: scale(1.06);
 }
 .singtube .tube-gallery ul li a:hover p {
   text-decoration: underline;
