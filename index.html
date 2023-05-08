@@ -119,10 +119,13 @@
             <div class="top-right">
               <ul>
                 <li>
-                  <a href="#"> 로그인 </a>
+                  <a href="#">로그인</a>
                 </li>
                 <li>
-                  <a href="#"> 판매자 신청 </a>
+                  <a href="#">회원가입</a>
+                </li>
+                <li>
+                  <a href="#">판매자 신청</a>
                 </li>
               </ul>
             </div>
@@ -168,15 +171,18 @@
               <div class="right">
                 <div class="mypg">
                   <div class="mypg-btn-wrap">
-                    <a href="#">
+                    <a href="#" class="btn-scrap">
+                      <img src="images/scrap_btn.png" alt="스크랩"/>
+                    </a>
+                    <a href="#" class="btn-mypg">
                       <img src="images/mypg_btn.png" alt="마이페이지" />
                       <img src="images/mypg_btn_hover.png" alt="마이페이지" />
                     </a>
-                    <a href="#">
+                    <a href="#" class="btn-cart">
                       <img src="images/cart_btn.png" alt="장바구니" />
                       <img src="images/cart_btn_hover.png" alt="장바구니" />
                     </a>
-                    <a href="#">
+                    <a href="#" class="btn-write">
                       <img src="images/write_btn.png" alt="글쓰기" />
                       <img src="images/write_btn_hover.png" alt="글쓰기" />
                     </a>
@@ -306,6 +312,164 @@
               </ul>
             </div>
           </div>
+          <!-- 모바일 사이트맵 -->
+          <div class="m-sitemap-list-container">
+            <div class="m-list-box">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_google.png"
+                      alt="안드로이드 앱 다운로드"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/icon_h_apple.png" alt="iOS 앱 다운로드" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_insta.png"
+                      alt="인스타그램 바로가기"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_kakao.png"
+                      alt="카카오 채널 바로가기"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_facebook.png"
+                      alt="페이스북 바로가기"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img
+                      src="images/icon_h_youtube.png"
+                      alt="유튜브 바로가기"
+                    />
+                  </a>
+                </li>
+              </ul>
+              <button class="m-closed-btn">
+                <span class="sound_only">닫기</span>
+              </button>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-login-btn">
+                <li>
+                  <a href="#">
+                    로그인
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    로그인
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-quick-menu">
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="icon"></i>
+                    <span>홈</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-tab-btn">
+                <li class="on">
+                  <a href="#">스토어</a>
+                </li>
+                <li>
+                  <a href="#">스토어</a>
+                </li>
+              </ul>
+              <ul class="m-tab-list">
+                <li>
+                  <a href="#">홈</a>
+                </li>
+                <li>
+                  <a href="#">카테고리</a>
+                </li>
+                <li>
+                  <a href="#">베스트</a>
+                </li>
+                <li>
+                  <a href="#">기획전</a>
+                </li>
+                <li>
+                  <a href="#">이벤트</a>
+                </li>
+              </ul>
+            </div>
+            <div class="m-list-box">
+              <ul class="m-apply">
+                <li>
+                  <a href="#">판매자 신청</a>
+                </li>
+                <li>
+                  <a href="#">사업자 구매회원 신청</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </header>
       <div class="sitemap-bgc"></div>
@@ -361,26 +525,7 @@
               <div class="v-pg"></div>
               <div class="v-btn v-next"></div>
             </div>
-          </div>
-          <!-- v-swiper -->
-          <script>
-            var swiper = new Swiper(".v-swiper", {
-              loop: true,
-              speed: 500,
-              autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-              },
-              pagination: {
-                el: ".v-pg",
-                type: "fraction",
-              },
-              navigation: {
-                nextEl: ".v-next",
-                prevEl: ".v-prev",
-              },
-            });
-          </script>
+          </div>          
         </div>
       </section>
       <!-- //비주얼 -->
@@ -1187,6 +1332,23 @@
         <div class="inner"></div>
       </section>
       <!-- //싱그러움을 전해보세요 -->
+      <!-- 메인화면 고정 퀵메뉴 -->
+      <ul class="fix-quick-menu">
+        <li>
+          <a href="#" class="kakao-btn">
+            <img src="images/icon_fix_kakao.png" alt="카카오채널 바로가기" />
+          </a>
+        </li>
+        <li>
+          <a href="#" class="top-btn">
+            <span>
+              <i class="icon-top"></i>
+              TOP
+            </span>
+          </a>
+        </li>
+      </ul>
+      <!--// 메인화면 퀵메뉴 -->
       <!-- 하단 -->
       <footer class="footer">
         <div class="inner">
@@ -1255,25 +1417,8 @@
           </div>
         </div>
       </footer>
-      <!-- //하단 -->
+      <!-- //하단 -->      
     </div>
-    <!-- //전체 레이아웃 끝 -->
-    <!-- 메인화면 고정 퀵메뉴 -->
-    <ul class="fix-quick-menu">
-      <li>
-        <a href="#" class="kakao-btn">
-          <img src="images/icon_fix_kakao.png" alt="카카오채널 바로가기" />
-        </a>
-      </li>
-      <li>
-        <a href="#" class="top-btn">
-          <span>
-            <i class="icon-top"></i>
-            TOP
-          </span>
-        </a>
-      </li>
-    </ul>
-    <!--// 메인화면 퀵메뉴 -->
+    <!-- //전체 레이아웃 끝 -->    
   </body>
 </html>

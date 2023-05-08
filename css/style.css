@@ -86,6 +86,12 @@ body.active{
 .s-menu li a:hover {
   background: #d9d9d9;
 }
+@media screen and (max-width: 1246px) {
+  .inner{
+    margin-left: 23px;
+    margin-right: 23px;
+  }
+}
 
 /* 상단 */
 .header {
@@ -247,8 +253,7 @@ body.active{
   display: flex;
   align-items: center;
 }
-.header .bottom .nav .right .mypg-btn-wrap a {
-}
+.header .bottom .nav .right .mypg-btn-wrap a {}
 .header .bottom .nav .right .mypg-btn-wrap a img {
   display: block;
 }
@@ -261,6 +266,7 @@ body.active{
 .header .bottom .nav .right .mypg-btn-wrap a:hover img:last-child {
   display: block;
 }
+.header .bottom .nav .right .mypg-btn-wrap a.btn-scrap img {display: block;}
 .header .bottom .nav .right .search-wrap {
   width: 205px;
   height: 40px;
@@ -306,7 +312,7 @@ body.active{
   position: absolute;
   left: 0;
   width: 100%;
-  /* height: calc(100vh - 160px); */
+  height: 0;
 }
 .header .sitemap-list-box {
   position: relative;
@@ -357,6 +363,7 @@ body.active{
   padding: 5px 0;
 }
 .sitemap-bgc{
+  visibility: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -367,6 +374,7 @@ body.active{
   opacity: 0;
   transition: opacity 0.4s;
 }
+.m-sitemap-list-container{display: noned;}
 /* 상단 js 이벤트 */
 .header.active{}
 .header.active .bottom .nav .left .sitemap-btn{
@@ -380,7 +388,86 @@ body.active{
   top: 0;
 }
 .sitemap-bgc.active{
+  visibility: visible;
   opacity: 1;
+}
+@media screen and (max-width: 1246px) {
+  .header .top{
+    padding: 6px 0;
+  }
+  .header .top-left ul > li > a img{
+    width: 18px;
+  }  
+  .header .top-right ul > li{margin-right: 15px;}  
+  .header .top-right ul > li > a{
+    font-size: 11px;
+  }
+  .header .bottom .logo{padding-top: 15px;}
+  .header .bottom .logo a img{height: 21px;}
+  .header .bottom .nav .left .sitemap-btn{
+    width: 19px;
+    margin-bottom: 2.5px;
+    background-size: contain;
+  }
+  .header .bottom .nav .left .gnb ul > li > a{
+    font-size: 14px;
+    line-height: 45px;
+    padding: 0 10px;
+  }
+  .header .bottom .nav .left .gnb ul > li > a.on::after{
+    width: 5px;
+    height: 5px;
+  }
+  .header .bottom .nav .right .mypg-btn-wrap a img{width: 32px;}
+  .header .bottom .nav .right .search-wrap{
+    width: 165px;
+    height: 30px;    
+    padding: 0 10px;
+  }
+  .header .bottom .nav .right .search-wrap .search-txt{
+    font-size: 11px;
+  }
+  .header .bottom .nav .right .search-wrap .search-btn{
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+  }  
+}
+@media screen and (max-width: 767px) {
+  .header .top{
+    display: none;
+  }
+  .header .bottom{border-bottom: 0;}
+  .header .bottom .nav{
+    display: block;
+  }
+  .header .bottom .nav .left{display: inline-block;}
+  .header .bottom .nav .left .gnb{display: none;}
+  .header .bottom .nav .left .sitemap{
+    position: absolute;
+    top: 10px;
+  }
+  .header .bottom .nav .right .mypg{display: block;}
+  .header .bottom .nav .right .mypg-btn-wrap{
+    position: absolute;
+    top: 10px;
+    right: 23px;
+  }
+  .header .bottom .nav .right .mypg-btn-wrap a.btn-mypg,
+  .header .bottom .nav .right .mypg-btn-wrap a.btn-write{
+    display: none;
+  }
+  .header .bottom .nav .right .search-wrap{
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 20px;
+  }
+  .header .bottom .nav .right .search-wrap .search-btn{
+    width: 15px;
+    height: 15px;
+    background-image: url(/images/m_search_btn.png);
+  }  
 }
 /* 비주얼 */
 .visual {
