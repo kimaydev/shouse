@@ -1142,6 +1142,11 @@ section.quick {
   height: 280px;
   overflow: hidden;
 }
+.pick .list-top:hover .img > img {
+  transform: scale(1);
+  transition: 3s;
+}
+
 .pick .list-top .img .pick-bookmark {
   position: absolute;
   width: 33px;
@@ -1156,6 +1161,7 @@ section.quick {
   object-fit: cover;
   border-radius: 4px;
 }
+
 .pick .list-top .text {
   margin: 20px 0;
 }
@@ -1241,13 +1247,122 @@ section.guide {
   font-weight: 700;
   color: #222624;
 }
-.guide .guide-img-list .guide-img img {
+
+.guide .guide-img-list {
+  display: flex;
+  gap: 0 20px;
+}
+
+.guide-slide {
+  position: relative;
+}
+.guide-layout {
+  display: block;
+}
+.guide-img img {
+  width: 285px;
+  height: 369.92px;
+  width: 100%;
+  height: auto;
+}
+
+.guide .guide-swiper .sw-bt {
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 0;
+  border: 0;
+}
+.sw-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../images/icon_visual_prev.png") no-repeat center;
+  z-index: 999;
+  background-color: rgba(0, 154, 62, 0.9);
+}
+.sw-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  background: url("../images/icon_visual_next.png") no-repeat center;
+  z-index: 999;
+  background-color: rgba(0,0,0,0.6);
 }
 
 /* 싱그러움을 전해보세요 */
 .cs {
+  margin: 80px;
+}
+.cs .inner {
+}
+.cs .cs-title {
+  line-height: 63px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #222624;
 }
 
+.cs .cs-box1 {
+  position: relative;
+  width: 590px;
+  height: 100px;
+  background-color: #f2f2f2;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.cs .cs-box1 .cs-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  right: 40px;
+}
+.cs .cs-box2 {
+  position: relative;
+  width: 590px;
+  height: 100px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  float: left;
+  cursor: pointer;
+}
+.cs .cs-box2 .cs-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  right: 40px;
+}
+.cs .cs-box1 .seller-title {
+  padding: 28px 0 0 40px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cs .cs-box1 .desc {
+  margin: 5px;
+  padding: 0 0 0 33px;
+  font-size: 14px;
+  color: #808080;
+}
+.cs .cs-box2 .seller-title {
+  padding: 28px 0 0 40px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cs .cs-box2 .desc {
+  margin: 5px;
+  padding: 0 0 0 35px;
+  font-size: 14px;
+  color: #808080;
+}
 /* 하단 */
 .footer {
   font-size: 15px;
