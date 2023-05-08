@@ -980,59 +980,95 @@ section.quick {
 }
 .singtube .tube-gallery {
 }
-.singtube ul {
+.singtube .tube-gallery ul {
   display: flex;
-  gap: 20px;
+  gap: 40px 20px;
+  flex-wrap: wrap;
 }
-.singtube .tube-list {
-  width: calc(100% / 3);
+.singtube .tube-gallery ul li {
+  width: calc(94% / 3);
 }
-.singtube .tube-list .tube-thumb {
-}
-.singtube .tube-list .tube-thumb .tube-link {
-  display: inline-block;
-  margin-top: 5px;
+.singtube .tube-gallery ul li a {
   width: 100%;
 }
-.singtube .tube-list .tube-thumb .tube-link .tube-img {
-  position: relative;
-  background: url("../images/tube/tube1.png") no-repeat center;
-  width: 100%;
-  height: 225px;
-  border: 0;
-  border-radius: 5px;
+.singtube .tube-gallery ul li a .tube-img {
+  border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  margin-bottom: 21px;
+  height: 223px;
 }
-.singtube .tube-list .tube-thumb .tube-link .tube-img .t-bt {
+.singtube .tube-gallery ul li a .tube-img::after {
+  content: "";
+  display: block;
+  padding-bottom: 55%;
+}
+.singtube .tube-gallery ul li a .tube-img > img {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
-  padding-right: 7px;
-  padding-left: 7px;
-  line-height: 24px;
-  font-weight: 500;
-  color: #fff;
-  font-size: 12px;
-  background: #000;
-  border-radius: 0 5px;
-}
-.singtube .tube-list .tube-thumb .tube-link .tube-img .t-bookmark {
-  position: absolute;
-  right: 9px;
-  bottom: 10px;
-  padding: 0px 7px;
-  background: transparent;
-  border: 0;
-  width: 45px;
-}
-.singtube .tube-list .tube-thumb .tube-link .tube-img .t-bookmark img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.singtube .tube-list .tube-thumb .tube-link p {
-  margin-top: 20px;
+.singtube .tube-gallery ul li a .tube-img .t-bt {
+  position: absolute;
+  z-index: 11;
+  left: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 0px 4px 0 0;
+  color: #fff;
+  padding: 0 7px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.singtube .tube-gallery ul li a p {
+  color: #4d4d4d;
   font-size: 14px;
   font-weight: 300;
-  color: #4d4d4d;
+  margin: 21px 0 -3px;
+}
+
+.singtube .tube-gallery .tube-link .tube-img .play {
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 100%;
+  z-index: 11;
+}
+.singtube .tube-gallery .tube-link .tube-img .play:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 7px);
+  left: calc(50% - 4px);
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 12px solid #222624;
+}
+.singtube .tube-gallery ul li a .tube-img button {
+  position: absolute;
+  z-index: 11;
+  right: 10px;
+  bottom: 6px;
+  width: 43px;
+  height: 42px;
+  border: none;
+  background: none;
+}
+.singtube .tube-gallery ul li a .tube-img button img {
+  width: 100%;
+  height: 100%;
+}
+.singtube .tube-gallery ul li a:hover .tube-img > img {
+  transition: all 0.6s;
+  transform: scale(1.06);
+}
+.singtube .tube-gallery ul li a:hover p {
+  text-decoration: underline;
 }
 
 /* HOT Keyword */
