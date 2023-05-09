@@ -1142,10 +1142,6 @@ section.quick {
   height: 280px;
   overflow: hidden;
 }
-.pick .list-top:hover .img > img {
-  transform: scale(1);
-  transition: 3s;
-}
 
 .pick .list-top .img .pick-bookmark {
   position: absolute;
@@ -1160,6 +1156,7 @@ section.quick {
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
+
 }
 
 .pick .list-top .text {
@@ -1182,6 +1179,15 @@ section.quick {
   color: #808080;
   margin-top: 21px;
 }
+.pick .pick-middle .list-top .img img:hover {
+  transform: scale(1.1);
+  transition: transform .4s;
+}
+.pick .pick-middle .list-top:hover .text p {
+  text-decoration: underline;
+  color: #808080 !important;
+}
+
 .pick .list-down .img {
   position: relative;
   height: 280px;
@@ -1221,6 +1227,14 @@ section.quick {
   color: #e05438;
   font-size: 20px;
   font-weight: 500;
+}
+.pick .pick-middle .list-down .img img:hover {
+  transform: scale(1.1);
+  transition: transform .4s;
+}
+.pick .pick-middle .list-down:hover .text p {
+  text-decoration: underline;
+  color: #808080 !important;
 }
 .pick .price {
   color: #b3b3b3;
@@ -1264,6 +1278,16 @@ section.guide {
   height: 369.92px;
   width: 100%;
   height: auto;
+}
+.guide-img > img {
+  position: relative;
+}
+.guide .swiper-wrapper .guide-img .newguide {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 27px;
+  height: 41px;
 }
 
 .guide .guide-swiper .sw-bt {
