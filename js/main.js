@@ -6,11 +6,14 @@ window.onload = function () {
     ".header .bottom .nav .left .sitemap-btn"
   );
   let sitemapBgc = document.querySelector(".sitemap-bgc");
+  let mbSitemap = document.querySelector(".m-sitemap-list-container");
+  let mbSitemapClosed = document.querySelector(".m-closed-btn");
 
   sitemapBtn.addEventListener("click", function () {
     body.classList.toggle("active");
     header.classList.toggle("active");
-    sitemapBgc.classList.toggle("active");
+    sitemapBgc.classList.toggle("active");    
+    mbSitemap.classList.toggle("active");    
   });
   document.addEventListener("click", function (e) {
     if (!header.contains(e.target)) {
@@ -18,6 +21,9 @@ window.onload = function () {
       header.classList.remove("active");
       sitemapBgc.classList.remove("active");
     }
+  });
+  mbSitemapClosed.addEventListener("click", function(){
+    mbSitemap.classList.remove("active"); 
   });
   // visual swiper slide
   var swiper = new Swiper(".v-swiper", {
