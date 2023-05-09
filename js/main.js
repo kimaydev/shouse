@@ -26,7 +26,7 @@ window.onload = function () {
     mbSitemap.classList.remove("active"); 
   });
   // visual swiper slide
-  var swiper = new Swiper(".v-swiper", {
+  let visualSwiper = new Swiper(".v-swiper", {
     loop: true,
     speed: 500,
     autoplay: {
@@ -40,6 +40,36 @@ window.onload = function () {
     navigation: {
       nextEl: ".v-next",
       prevEl: ".v-prev",
+    },
+  });
+  //recommend swiper slide
+  let recommendSwiper = new Swiper(".recommend-gallery", {
+    slidesPerView: 3,
+    spaceBetween: 15,
+    freeMode: true,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    breakpoints: {
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
+        freeMode: false,
+      },
+      800: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        grid: {
+          rows: 2,
+          fill: "row",
+        },
+        freeMode: false,
+      }
     },
   });
 };
