@@ -21,6 +21,7 @@ body.active {
 
 /* 공통 레이아웃 */
 .wrap {
+  /* min-width: 320px; */
 }
 .wrap > section {
   padding: 30px 0;
@@ -76,7 +77,7 @@ body.active {
 .s-menu li a {
   display: block;
   font-weight: 300;
-  padding: 0 9px;
+  padding: 0 13px;
   line-height: 37px;
   font-size: 14px;
   background: #f2f2f2;
@@ -228,10 +229,10 @@ body.active {
   color: #009b3f;
 }
 .header .bottom .nav .left .gnb ul > li > a.on::after {
-  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
+  content: "";
   z-index: 2;
   -webkit-transform: translate(-50%, 50%);
   -ms-transform: translate(-50%, 50%);
@@ -367,12 +368,12 @@ body.active {
   padding: 5px 0;
 }
 .sitemap-bgc {
-  visibility: hidden;
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
   z-index: 999;
   background: rgba(0, 0, 0, 0.3);
   opacity: 0;
@@ -627,6 +628,14 @@ section.quick {
 }
 
 /* 스토리 */
+
+/* 확인 필요 */
+.story .active {
+  color: #fff !important;
+  background-color: #009a3e !important;
+}
+/*// 확인 필요 */
+
 .story {
 }
 .story .subtitle {
@@ -637,13 +646,45 @@ section.quick {
 }
 .story .story-gallery {
 }
+.story .story-gallery .btn-wrap {
+  display: none;
+  justify-content: center;
+  margin-top: 30px;
+}
+.story .story-gallery .btn-wrap a {
+  background: #d9d9d9;
+  width: 235px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+.story .story-gallery .btn-wrap a span {
+  position: relative;
+  padding-right: 15px;
+  line-height: 40px;
+  background: url("../images/arrow19_r.png") no-repeat right center / 6px auto;
+}
+/* .story .story-gallery .btn-wrap a span::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 15px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+} */
 .story .story-list {
+  display: flex;
   padding-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 25px;
 }
 /* flex 적용 검토 */
 .story .story-list li {
-  float: left;
-  width: 25%;
+  width: 24%;
 }
 .story .story-thumb {
 }
@@ -651,7 +692,7 @@ section.quick {
   display: block;
 }
 .story .story-link:hover .story-img .thumb-img {
-  transform: translate(-50%, -50%) scale(1.05);
+  transform: scale(1.05);
 }
 .story .story-link:hover p {
   text-decoration: underline;
@@ -660,29 +701,34 @@ section.quick {
 .story .story-link p {
   font-size: 14px;
   line-height: 20px;
+  color: #4d4d4d;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: 400;
-  margin-top: 20px;
+  margin-top: 21px;
 }
 
 .story .story-img {
   position: relative;
-  width: 285px;
-  height: 190px;
+  width: 100%;
   border-radius: 4px;
   overflow: hidden;
+}
+.story .story-img::after {
+  display: block;
+  content: "";
+  padding-bottom: 66%;
 }
 
 .story .story-img img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
   width: 100%;
-
-  transition: all 1s;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.4s;
 }
 .story .story-img .s-bt {
   position: absolute;
@@ -697,11 +743,11 @@ section.quick {
 }
 .story .story-img .s-bookmark {
   position: absolute;
-  right: 15px;
-  bottom: 10px;
+  right: 18px;
+  bottom: 12px;
   padding: 0;
-  width: 32px;
-  height: 47px;
+  width: 24px;
+  height: 40px;
   border: 0;
   background: transparent;
 }
@@ -712,8 +758,9 @@ section.quick {
 }
 
 .story .story-user {
-  display: block;
-  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 .story .story-uimg {
   position: relative;
@@ -721,22 +768,112 @@ section.quick {
   height: 35px;
   border-radius: 50%;
   overflow: hidden;
-  float: left;
 }
 .story .story-uimg img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1.2);
   height: 100%;
+  width: 100%;
 }
 .story .story-user p {
-  float: left;
-  line-height: 35px;
   margin-left: 10px;
+  font-size: 15px;
+  color: #4d4d4d;
 }
 .story .story-user:hover p {
   text-decoration: underline;
+}
+@media screen and (max-width: 1246px) {
+  .story .subtitle {
+    line-height: 57px;
+    font-size: 23px;
+    color: #222624;
+  }
+  .story .subtab-link {
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .story .s-menu ul {
+    width: calc(100% + 6px);
+  }
+  .story .s-menu li a {
+    color: #4d4d4d;
+    font-size: 13px;
+    line-height: 32px;
+    padding: 0px 9px;
+    font-weight: 300;
+  }
+  .story .story-list {
+    padding-top: 20px;
+  }
+  .section-title .more img {
+    padding-right: 15px;
+    background-size: 5px auto;
+    vertical-align: middle;
+    width: 5px;
+    height: 10px;
+  }
+  .story .story-uimg {
+    width: 21px;
+    height: 21px;
+  }
+  .story .story-user p {
+    font-size: 14px;
+  }
+  .story .story-img .s-bookmark {
+    right: 10px;
+    bottom: 10px;
+    width: 22px;
+    height: 25px;
+    background-size: 22px auto;
+  }
+  .story .story-link p {
+    margin-top: 15px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .story .subtitle {
+    font-size: 22px;
+    line-height: 29px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+  }
+  .story .story-list li {
+    width: 49%;
+  }
+  .story .story-list li:nth-child(n + 5):nth-child(-n + 8) {
+    display: none;
+  }
+  .story .story-gallery .btn-wrap {
+    display: flex;
+  }
+  .story .story-user {
+    min-height: 30px;
+  }
+  .story .story-uimg {
+    width: 30px;
+    height: 30px;
+  }
+  .story .story-user p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .story .story-img .s-bookmark {
+    right: 10px;
+    bottom: 16px;
+    width: 20px;
+    height: 18px;
+    background-size: 15px auto;
+  }
+  .story .story-link {
+    font-size: 12px;
+  }
+  .story .story-link p {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 11px 0 0 -4px;
+  }
 }
 
 /* 인기 계정 랭킹 */
@@ -820,16 +957,16 @@ section.quick {
   cursor: pointer;
 }
 .ranking-list .list-top .follow-btn::before {
-  content: "";
   display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  content: "";
   font-size: 0;
   width: 4px;
   height: 4px;
   background: #b3b3b3;
   border-radius: 100%;
-  position: absolute;
-  top: 50%;
-  left: -8px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -846,26 +983,6 @@ section.quick {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
-/* 확인 필요 */
-.story .active {
-  color: #fff !important;
-  background-color: #009a3e !important;
-}
-.story .s-menu li a {
-  display: block;
-  font-weight: 300;
-  padding: 0 9px;
-  line-height: 37px;
-  font-size: 14px;
-  background: #f2f2f2;
-  border-radius: 4px;
-  transition: all 0.5s;
-}
-.story .s-menu li a:hover {
-  background: #d9d9d9;
-}
-/*// 확인 필요 */
 
 /* 싱그런 여행 */
 .travel {
@@ -992,15 +1109,15 @@ section.quick {
   width: 100%;
 }
 .singtube .tube-gallery ul li a .tube-img {
+  position: relative;
   border-radius: 4px;
   overflow: hidden;
-  position: relative;
   margin-bottom: 21px;
   height: 223px;
 }
 .singtube .tube-gallery ul li a .tube-img::after {
-  content: "";
   display: block;
+  content: "";
   padding-bottom: 55%;
 }
 .singtube .tube-gallery ul li a .tube-img > img {
@@ -1013,9 +1130,9 @@ section.quick {
 }
 .singtube .tube-gallery ul li a .tube-img .t-bt {
   position: absolute;
-  z-index: 11;
-  left: 0;
   bottom: 0;
+  left: 0;
+  z-index: 11;
   background: #000;
   border-radius: 0px 4px 0 0;
   color: #fff;
@@ -1041,19 +1158,19 @@ section.quick {
   z-index: 11;
 }
 .singtube .tube-gallery .tube-link .tube-img .play:after {
-  content: "";
   position: absolute;
   top: calc(50% - 7px);
   left: calc(50% - 4px);
+  content: "";
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-left: 12px solid #222624;
 }
 .singtube .tube-gallery ul li a .tube-img button {
   position: absolute;
-  z-index: 11;
   right: 10px;
   bottom: 6px;
+  z-index: 11;
   width: 43px;
   height: 42px;
   border: none;
@@ -1064,7 +1181,7 @@ section.quick {
   height: 100%;
 }
 .singtube .tube-gallery ul li a:hover .tube-img > img {
-  transition: all 0.6s;
+  transition: all 0.4s;
   transform: scale(1.06);
 }
 .singtube .tube-gallery ul li a:hover p {
@@ -1149,10 +1266,10 @@ section.quick {
 
 .pick .list-top .img .pick-bookmark {
   position: absolute;
-  width: 33px;
-  height: auto;
   right: 10px;
   bottom: 10px;
+  width: 33px;
+  height: auto;
   background-size: 31px auto;
 }
 .pick .list-top .img img {
@@ -1189,10 +1306,10 @@ section.quick {
 }
 .pick .list-down .img .pick-bookmark {
   position: absolute;
-  width: 33px;
-  height: auto;
   right: 10px;
   bottom: 10px;
+  width: 33px;
+  height: auto;
   background-size: 31px auto;
 }
 .pick .list-down .img img {
@@ -1277,8 +1394,8 @@ section.guide {
 }
 .sw-prev {
   position: absolute;
-  left: 0;
   top: 50%;
+  left: 0;
   transform: translate(-50%, -50%);
   background: url("../images/icon_visual_prev.png") no-repeat center;
   z-index: 999;
@@ -1286,12 +1403,12 @@ section.guide {
 }
 .sw-next {
   position: absolute;
-  right: 0;
   top: 50%;
+  right: 0;
   transform: translate(50%, -50%);
   background: url("../images/icon_visual_next.png") no-repeat center;
   z-index: 999;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* 싱그러움을 전해보세요 */
@@ -1320,10 +1437,10 @@ section.guide {
 }
 .cs .cs-box1 .cs-icon {
   position: absolute;
-  width: 40px;
-  height: 40px;
   top: calc(50% - 20px);
   right: 40px;
+  width: 40px;
+  height: 40px;
 }
 .cs .cs-box2 {
   position: relative;
@@ -1336,10 +1453,10 @@ section.guide {
 }
 .cs .cs-box2 .cs-icon {
   position: absolute;
-  width: 40px;
-  height: 40px;
   top: calc(50% - 20px);
   right: 40px;
+  width: 40px;
+  height: 40px;
 }
 .cs .cs-box1 .seller-title {
   padding: 28px 0 0 40px;
