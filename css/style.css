@@ -1572,6 +1572,35 @@ section.quick {
   white-space: nowrap;
   text-align: center;
 }
+/* keyword 반응형 */
+@media screen and (max-width: 1246px) {
+  .keyword-wrap {
+    padding: 42px 0;
+  }
+  .keyword .swiper-slide {
+    font-size: 14px;
+    line-height: 34px;
+  }
+  .keyword .swiper-slide-active {
+    padding: 0 22px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .keyword .inner {
+    padding: 15px;
+    background: #f2faf5 url("../images/hotkeyword/hotkeyword.jpg")
+      calc(100% + 23.5px) 0 no-repeat;
+    background-size: 216px auto;
+  }
+  .keyword-wrap {
+    background: none;
+  }
+  .keyword-title {  
+    font-size: 22px;
+    margin-bottom: 0 0 0 50px;
+  }
+}
 /* MD's Pick */
 .pick {
 }
@@ -1603,10 +1632,6 @@ section.quick {
   position: relative;
   height: 280px;
   overflow: hidden;
-}
-.pick .list-top:hover .img > img {
-  transform: scale(1);
-  transition: 3s;
 }
 
 .pick .list-top .img .pick-bookmark {
@@ -1644,6 +1669,15 @@ section.quick {
   color: #808080;
   margin-top: 21px;
 }
+.pick .pick-middle .list-top .img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
+.pick .pick-middle .list-top:hover .text p {
+  text-decoration: underline;
+  color: #808080 !important;
+}
+
 .pick .list-down .img {
   position: relative;
   height: 280px;
@@ -1684,6 +1718,14 @@ section.quick {
   font-size: 20px;
   font-weight: 500;
 }
+.pick .pick-middle .list-down .img img:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s;
+}
+.pick .pick-middle .list-down:hover .text p {
+  text-decoration: underline;
+  color: #808080 !important;
+}
 .pick .price {
   color: #b3b3b3;
   margin: 0 4px 0 0;
@@ -1696,7 +1738,6 @@ section.quick {
 /* 가이드북 */
 section.guide {
   background-color: #f2f2f2;
-  /* height: auto; */
   padding: 60px 0 80px;
 }
 .guide {
@@ -1726,6 +1767,16 @@ section.guide {
   height: 369.92px;
   width: 100%;
   height: auto;
+}
+.guide-img > img {
+  position: relative;
+}
+.guide .swiper-wrapper .guide-img .newguide {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 27px;
+  height: 41px;
 }
 
 .guide .guide-swiper .sw-bt {

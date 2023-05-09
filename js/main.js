@@ -73,3 +73,13 @@ window.onload = function () {
     },
   });
 };
+
+// keyword swiper
+new Swiper(".sw-keyword", {
+  slidesPerView: "auto",
+  speed: 600,
+  loop: false,
+  allowTouchMove: true,
+  spaceBetween: 0, 
+});
+          
