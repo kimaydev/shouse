@@ -52,9 +52,12 @@ body.active {
   width: 7px;
   margin-left: 7px;
 }
-.section-title .set-link{}
-.section-title .set-link .subtab-link{color: #4d4d4d;}
-.section-title .set-link img{
+.section-title .set-link {
+}
+.section-title .set-link .subtab-link {
+  color: #4d4d4d;
+}
+.section-title .set-link img {
   width: 15px;
   vertical-align: -1px;
 }
@@ -99,7 +102,22 @@ body.active {
     margin-left: 23px;
     margin-right: 23px;
   }
-  .wrap > section{padding: 20px 0;}
+  .wrap > section {
+    padding: 20px 0;
+  }
+  .section-title .more img {
+    padding-right: 15px;
+    background-size: 5px auto;
+    vertical-align: middle;
+    width: 5px;
+    height: 10px;
+  }
+  .section-title .set-link img {
+    width: 20px;
+    height: auto;
+    vertical-align: -4px;
+    padding-right: 0;
+  }
 }
 @media screen and (max-width: 800px) {
   .inner {
@@ -431,7 +449,7 @@ body.active {
     padding-top: 15px;
   }
   .header .bottom .logo a img {
-    height: 21px;
+    height: 17px;
   }
   .header .bottom .nav .left .sitemap-btn {
     width: 19px;
@@ -463,23 +481,27 @@ body.active {
     height: 12px;
     background-size: contain;
   }
-  .header .sitemap-list-box .inner{
+  .header .sitemap-list-box .inner {
     margin-left: 0;
     margin-right: 0;
   }
-  .header .sitemap-list-box .sitemap-list > li{
+  .header .sitemap-list-box .sitemap-list > li {
     padding: 15px 25px 45px;
-  }  
-  .header .sitemap-list-box .sitemap-list > li:first-child{border-left: 0;}
-  .header .sitemap-list-box .sitemap-list > li:last-child{border-right: 0;}
-  .header .sitemap-list-box .sitemap-list .sitemap-gnb{
+  }
+  .header .sitemap-list-box .sitemap-list > li:first-child {
+    border-left: 0;
+  }
+  .header .sitemap-list-box .sitemap-list > li:last-child {
+    border-right: 0;
+  }
+  .header .sitemap-list-box .sitemap-list .sitemap-gnb {
     font-size: 20px;
     padding: 15px 0;
   }
-  .header .sitemap-list-box .sitemap-list .list-bottom > ul > li > a{
+  .header .sitemap-list-box .sitemap-list .list-bottom > ul > li > a {
     font-size: 14px;
   }
-  .header .sitemap-list-box .sitemap-list .list-bottom .sitemap-lnb{
+  .header .sitemap-list-box .sitemap-list .list-bottom .sitemap-lnb {
     font-size: 13px;
   }
 }
@@ -508,8 +530,8 @@ body.active {
   }
   .header .bottom .nav .right .mypg-btn-wrap {
     position: absolute;
-    top: 10px;
-    right: 23px;
+    top: 8px;
+    right: 15px;
   }
   .header .bottom .nav .right .mypg-btn-wrap a.btn-mypg,
   .header .bottom .nav .right .mypg-btn-wrap a.btn-write {
@@ -532,7 +554,9 @@ body.active {
   .header .sitemap-list-box {
     display: none;
   }
-  .sitemap-bgc{z-index: 9999;}
+  .sitemap-bgc {
+    z-index: 9999;
+  }
 }
 /* 모바일 헤더 */
 .m-sitemap-list-container {
@@ -803,7 +827,7 @@ body.active {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1250px) {  
+@media screen and (max-width: 1250px) {
 }
 @media screen and (max-width: 800px) {
   /* 모바일 헤더 js 이벤트 */
@@ -900,25 +924,25 @@ body.active {
 }
 /* 비주얼 반응형 */
 @media screen and (max-width: 1250px) {
-  .v-swiper .v-nav-wrap{
+  .v-swiper .v-nav-wrap {
     margin-top: 20px;
     margin-right: 15px;
   }
-  .v-swiper .v-nav-wrap .v-btn::after{
+  .v-swiper .v-nav-wrap .v-btn::after {
     width: 5px;
     height: 9px;
   }
-  .v-swiper .v-nav-wrap .v-pg > span{
+  .v-swiper .v-nav-wrap .v-pg > span {
     font-size: 11px;
     padding: 0 7px;
   }
-  .v-swiper .v-nav-wrap .v-pg > span.swiper-pagination-current::before{
+  .v-swiper .v-nav-wrap .v-pg > span.swiper-pagination-current::before {
     width: 3px;
     height: 3px;
-  }  
+  }
 }
-@media screen and (max-width: 800px){
-  .v-swiper .v-nav-wrap{
+@media screen and (max-width: 800px) {
+  .v-swiper .v-nav-wrap {
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -928,12 +952,14 @@ body.active {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.2);
   }
-  .v-swiper .v-nav-wrap .v-btn{display: none;}
+  .v-swiper .v-nav-wrap .v-btn {
+    display: none;
+  }
   .v-swiper .v-nav-wrap .v-pg > span,
-  .v-swiper .v-nav-wrap .v-pg > span.swiper-pagination-current{
+  .v-swiper .v-nav-wrap .v-pg > span.swiper-pagination-current {
     color: #fff;
   }
-  .v-swiper .v-nav-wrap .v-pg > span.swiper-pagination-current::before{
+  .v-swiper .v-nav-wrap .v-pg > span.swiper-pagination-current::before {
     background: #fff;
   }
 }
@@ -984,47 +1010,56 @@ section.quick {
   text-decoration: underline;
 }
 /* 퀵메뉴 반응형 */
-@media screen and (max-width: 1250px){
-  .quick-btn{padding-bottom: 45px;}
-  .quick-btn > li > a{font-size: 14px;}
+@media screen and (max-width: 1250px) {
+  .quick-btn {
+    padding-bottom: 45px;
+  }
+  .quick-btn > li > a {
+    font-size: 14px;
+  }
 }
-@media screen and (max-width: 800px){
-  .quick-btn{
+@media screen and (max-width: 800px) {
+  .quick-btn {
     flex-wrap: wrap;
     gap: 20px 10px;
     border-bottom: 0;
   }
-  .quick-btn > li{
+  .quick-btn > li {
     width: -webkit-calc(100% / 4 - 10px);
     width: -moz-calc(100% / 4 - 10px);
     width: calc(100% / 4 - 10px);
   }
-  .quick-btn > li > a{font-size: 12px;}
+  .quick-btn > li > a {
+    font-size: 12px;
+  }
 }
 /* 당신을 위한 맞춤 추천 */
 .recommend {
 }
-.recommend .recommend-gallery{padding-top: 30px;}
-.recommend .recommend-list{
+.recommend .recommend-gallery {
+  padding-top: 30px;
+}
+.recommend .recommend-list {
   /* padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px 15px; */
 }
-.recommend .recommend-list > li{
+.recommend .recommend-list > li {
   /* width: calc(100% / 4 - 15px); */
 }
-.recommend .recommend-thumb{}
-.recommend .recommend-link{
+.recommend .recommend-thumb {
+}
+.recommend .recommend-link {
   /* display: block; */
 }
-.recommend .recommend-link .recommend-img{
+.recommend .recommend-link .recommend-img {
   position: relative;
   padding-top: 100%;
   border-radius: 4px;
   overflow: hidden;
 }
-.recommend .recommend-link .recommend-img .thumb-img{
+.recommend .recommend-link .recommend-img .thumb-img {
   display: block;
   position: absolute;
   top: 0;
@@ -1034,23 +1069,23 @@ section.quick {
   object-fit: cover;
   transition: transform 0.5s;
 }
-.recommend .recommend-link:hover .recommend-img .thumb-img{
+.recommend .recommend-link:hover .recommend-img .thumb-img {
   transform: scale(1.05);
 }
-.recommend .recommend-link .recommend-img .r-bookmark{
+.recommend .recommend-link .recommend-img .r-bookmark {
   position: absolute;
-    right: 15px;
-    bottom: 10px;
-    padding: 0;
-    width: 32px;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
+  right: 15px;
+  bottom: 10px;
+  padding: 0;
+  width: 32px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
 }
-.recommend .recommend-link .recommend-img .r-bookmark img{
+.recommend .recommend-link .recommend-img .r-bookmark img {
   width: 100%;
 }
-.recommend .recommend-link p{
+.recommend .recommend-link p {
   font-size: 14px;
   color: #4d4d4d;
   font-weight: 400;
@@ -1060,17 +1095,17 @@ section.quick {
   overflow: hidden;
   margin-top: 20px;
 }
-.recommend .recommend-link:hover p{
+.recommend .recommend-link:hover p {
   text-decoration: underline;
 }
 /* 퀵메뉴 반응형 */
-@media screen and (max-width: 1250px){
-  .recommend .recommend-gallery{
+@media screen and (max-width: 1250px) {
+  .recommend .recommend-gallery {
     padding-top: 20px;
   }
-  .recommend .recommend-link p{
+  .recommend .recommend-link p {
     font-size: 13px;
-    margin-top: 15px;
+    margin-top: 10px;
     height: 40px;
     display: -webkit-box;
     word-wrap: break-word;
@@ -1078,14 +1113,14 @@ section.quick {
     -webkit-box-orient: vertical;
     white-space: inherit;
   }
-  .recommend .recommend-link .recommend-img .r-bookmark{
+  .recommend .recommend-link .recommend-img .r-bookmark {
     right: 10px;
     bottom: 5px;
     width: 22px;
   }
 }
-@media screen and (max-width: 800px){
-  .recommend .recommend-gallery{
+@media screen and (max-width: 800px) {
+  .recommend .recommend-gallery {
     overflow: inherit;
   }
 }
@@ -1266,13 +1301,6 @@ section.quick {
   .story .story-list {
     padding-top: 20px;
   }
-  .section-title .more img {
-    padding-right: 15px;
-    background-size: 5px auto;
-    vertical-align: middle;
-    width: 5px;
-    height: 10px;
-  }
   .story .story-uimg {
     width: 21px;
     height: 21px;
@@ -1341,6 +1369,7 @@ section.quick {
 /* 인기 계정 랭킹 */
 .ranking {
 }
+.ranking .inner{position: relative;}
 .ranking-list {
   padding-top: 30px;
 }
@@ -1349,9 +1378,10 @@ section.quick {
 .ranking-list ul li {
   position: relative;
   background: #f8f8f8;
-  height: 70px;
+  height: 110px;
   border-radius: 4px;
   padding: 20px 25px;
+  box-sizing: border-box;
   overflow: hidden;
 }
 .ranking-list .count {
@@ -1444,6 +1474,68 @@ section.quick {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.ranking-time{
+  position: absolute;
+  top: 87px;
+  right: 0;
+  font-size: 15px;
+  font-weight: 300;
+  color: #808080;
+}
+/* 인기 계정 랭킹 반응형 */
+@media screen and (max-width: 1250px) {
+  .ranking-list{padding-top: 20px;}
+  .ranking-list .count {
+    width: 17px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 11px;
+  }
+  .ranking-list ul li{
+    padding: 15px;
+    height: 82px;
+  }
+  .ranking-list .list-top a .profile-img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  .ranking-list .list-top a .profile-name {
+    font-size: 15px;
+    top: 6px;
+  }
+  .ranking-list .list-top .follow-btn {
+    top: 4px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .ranking-list .list-top .follow-btn::before {
+    width: 3px;
+    height: 3px;
+    left: -4px;
+  }
+  .ranking-list .list-bottom{margin-top: 10px;}
+  .ranking-list .list-bottom p {
+    font-size: 14px;
+  }
+  .ranking-time{font-size: 14px;}
+}
+@media screen and (max-width: 800px) {
+  .ranking .inner{
+    padding-bottom: 35px;
+  }
+  .ranking-list ul li {
+    width: 70%;
+  }
+  .ranking-time{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    top: auto;
+    bottom: 0;
+  }
 }
 
 /* 싱그런 여행 */
@@ -1713,7 +1805,7 @@ section.quick {
   .keyword-wrap {
     background: none;
   }
-  .keyword-title {  
+  .keyword-title {
     font-size: 22px;
     margin-bottom: 0 0 0 50px;
   }
