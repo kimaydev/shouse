@@ -36,14 +36,16 @@ window.onload = function () {
       prevEl: ".v-prev",
     },
   });
-};
-
-// keyword swiper
-new Swiper(".sw-keyword", {
+  // keyword swiper
+  new swiper(".sw-keyword", {
   slidesPerView: "auto",
   speed: 600,
   loop: false,
   allowTouchMove: true,
+  slidesPerView: 2
   spaceBetween: 0, 
 });
+};
+
+
           

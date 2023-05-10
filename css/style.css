@@ -1136,7 +1136,10 @@ section.quick {
   }
   .keyword-title {  
     font-size: 22px;
-    margin-bottom: 0 0 0 50px;
+    margin-bottom: -4px;
+  }
+  .keyword .swiper-slide a {
+    width: auto;
   }
 }
 /* MD's Pick */
@@ -1179,6 +1182,7 @@ section.quick {
   right: 10px;
   bottom: 10px;
   background-size: 31px auto;
+  cursor: pointer;
 }
 .pick .list-top .img img {
   width: 100%;
@@ -1207,7 +1211,7 @@ section.quick {
   color: #808080;
   margin-top: 21px;
 }
-.pick .pick-middle .list-top .img img:hover {
+.pick .pick-middle .list-top .img > img:hover {
   transform: scale(1.1);
   transition: transform 0.4s;
 }
@@ -1228,6 +1232,7 @@ section.quick {
   right: 10px;
   bottom: 10px;
   background-size: 31px auto;
+  cursor: pointer;
 }
 .pick .list-down .img img {
   width: 100%;
@@ -1256,10 +1261,11 @@ section.quick {
   font-size: 20px;
   font-weight: 500;
 }
-.pick .pick-middle .list-down .img img:hover {
+.pick .pick-middle .list-down .img > img:hover {
   transform: scale(1.1);
   transition: transform 0.4s;
 }
+
 .pick .pick-middle .list-down:hover .text p {
   text-decoration: underline;
   color: #808080 !important;
@@ -1272,13 +1278,23 @@ section.quick {
 }
 .pick .pick-bottom {
 }
+/* MD;s Pick 반응형 */
+@media screen and (max-width: 1246px) {
 
+}
+@media screen and (max-width: 767px) {
+  .pick .pick-middle .pick-img .pick-list li {
+    width: calc(100% / 2 - 20px);
+    margin-right: 20px;
+  }
+  
+}
 /* 가이드북 */
 section.guide {
   background-color: #f2f2f2;
   padding: 60px 0 80px;
 }
-.guide {
+.guide {  
 }
 .guide .inner {
 }
@@ -1360,7 +1376,7 @@ section.guide {
 
 .cs .cs-box1 {
   position: relative;
-  width: 590px;
+  width: calc(100% / 2 - 10px);
   height: 100px;
   background-color: #f2f2f2;
   margin-bottom: 10px;
@@ -1378,7 +1394,7 @@ section.guide {
 }
 .cs .cs-box2 {
   position: relative;
-  width: 590px;
+  width: calc(100% / 2 - 10px);
   height: 100px;
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -1414,6 +1430,16 @@ section.guide {
   font-size: 14px;
   color: #808080;
 }
+/* CS반응형 */
+@media screen and (max-width: 1246px) {
+ 
+}
+@media screen and (max-width: 767px) {
+  .cs .cs-box2 {
+    
+  }
+}
+
 /* 하단 */
 .footer {
   font-size: 15px;
