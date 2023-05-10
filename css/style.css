@@ -180,6 +180,7 @@ body.active {
   display: block;
   position: relative;
   z-index: 1;
+  width: 22px;
 }
 .header .top-right {
 }
@@ -608,8 +609,8 @@ body.active {
 .m-sitemap-list-container .m-list-box .m-sns-list > li > a {
   position: relative;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
 }
 .m-sitemap-list-container .m-list-box .m-sns-list > li > a::after {
   position: absolute;
@@ -635,6 +636,7 @@ body.active {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 1;
+  width: 27px;
 }
 .m-sitemap-list-container .m-list-box .m-closed-btn {
   position: absolute;
@@ -646,6 +648,7 @@ body.active {
   background: transparent url(/images/m_closed_btn.png) no-repeat center;
   background-size: contain;
   border: 0;
+  cursor: pointer;
 }
 .m-sitemap-list-container .m-list-box .m-login-btn {
   display: flex;
@@ -756,9 +759,13 @@ body.active {
   color: #009a3e;
 }
 .m-sitemap-list-container .m-tab-box .m-tab-list {
+  display: none;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.m-sitemap-list-container .m-tab-box .m-tab-list.on{
+  display: block;
 }
 .m-sitemap-list-container .m-tab-box .m-tab-list > li {
 }
@@ -2295,6 +2302,7 @@ section.guide {
   position: fixed;
   right: 30px;
   bottom: 30px;
+  z-index: 999;
 }
 .fix-quick-menu > li {
   margin-bottom: 10px;
@@ -2302,7 +2310,8 @@ section.guide {
 .fix-quick-menu > li:last-child {
   margin-bottom: 0;
 }
-.fix-quick-menu > li a {
+.fix-quick-menu > li a,
+.fix-quick-menu > li .write-btn{
   display: block;
   width: 60px;
   height: 60px;
@@ -2316,8 +2325,10 @@ section.guide {
 }
 .fix-quick-menu > li a img {
   display: block;
+  width: 100%;
 }
-.fix-quick-menu > li a.top-btn {
+.fix-quick-menu > li a.top-btn,
+.fix-quick-menu > li .write-btn{
   position: relative;
   color: #fff;
   background: #009a3e;
@@ -2345,4 +2356,39 @@ section.guide {
   background: url(/images/icon_fix_top.png) no-repeat center;
   background-size: contain;
 }
+.fix-quick-menu > .write-btn-box{display: none;}
+.fix-quick-menu > li .write-btn{
+  font-size: 0;
+}
+.fix-quick-menu > li .write-btn .icon-write{}
+.fix-quick-menu > li .write-btn .icon-write::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  background: url(/images/write_btn_2.png) no-repeat center;
+  background-size: contain;
+}
 /* 메인화면 고정 퀵메뉴 반응형 작업 */
+@media screen and (max-width: 800px) {
+  .fix-quick-menu{
+    right: 13px;
+    bottom: 65px;
+  }
+  .fix-quick-menu > .top-btn-box{display: none;}
+  .fix-quick-menu > .write-btn-box{display: block;}
+  .fix-quick-menu > li{margin-bottom: 7px;}
+  .fix-quick-menu > li a,
+  .fix-quick-menu > li .write-btn{
+    width: 40px;
+    height: 40px;
+    box-shadow: none;
+  }
+  .fix-quick-menu > li a.top-btn,
+  .fix-quick-menu > li .write-btn{
+    border: 1px solid #008033;
+  }
+}

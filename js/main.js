@@ -8,7 +8,6 @@ window.onload = function () {
   let sitemapBgc = document.querySelector(".sitemap-bgc");
   let mbSitemap = document.querySelector(".m-sitemap-list-container");
   let mbSitemapClosed = document.querySelector(".m-closed-btn");
-
   sitemapBtn.addEventListener("click", function () {
     body.classList.toggle("active");
     header.classList.toggle("active");
@@ -20,11 +19,46 @@ window.onload = function () {
       body.classList.remove("active");
       header.classList.remove("active");
       sitemapBgc.classList.remove("active");
+      mbSitemap.classList.remove("active");
     }
   });
   mbSitemapClosed.addEventListener("click", function () {
+    body.classList.remove("active");
+    header.classList.remove("active");
+    sitemapBgc.classList.remove("active");
     mbSitemap.classList.remove("active");
   });
+  mbSitemap.addEventListener("click", function(e){
+    e.stopPropagation();
+    // event stop
+  });
+  // header mobile sitemap tabmenu  
+  let mbTabBtn = document.querySelectorAll(".m-tab-box .m-tab-btn > li");
+  let mbTabList = document.querySelectorAll(".m-tab-box .m-tab-list");
+  mbTabBtn.forEach((tabBtn, idx) => {
+    tabBtn.addEventListener("click", function(){
+      mbTabList.forEach((list)=> {
+        list.classList.remove("on");
+      });
+      mbTabBtn.forEach((btn)=> {
+          btn.classList.remove("on");
+      });
+      mbTabBtn[idx].classList.add("on");
+      mbTabList[idx].classList.add("on");
+    });
+  });
+  // header mobile sitemap accordion action
+  let mbListMenu = document.querySelector(".m-tab-list .list-menu");  
+  let i;
+  mbListMenu.addEventListener("click", function(){
+    mbListMenu.classList.toggle("on");
+  });
+  // let mbListSubMenu = document.querySelectorAll(".m-tab-list .list-submenu");  
+  // for(i = 0; i < mbListMenu; i++){
+  //   mbListMenu[i].addEventListener("click", function(){
+  //     mbListMenu.classList.toggle("on");
+  //   });
+  // }  
   // visual swiper slide
   let visualSwiper = new Swiper(".v-swiper", {
     loop: true,
