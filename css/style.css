@@ -1120,6 +1120,9 @@ section.quick {
   }
 }
 @media screen and (max-width: 800px) {
+  .recommend {
+    overflow: hidden;
+  }
   .recommend .recommend-gallery {
     overflow: inherit;
   }
@@ -1369,7 +1372,9 @@ section.quick {
 /* 인기 계정 랭킹 */
 .ranking {
 }
-.ranking .inner{position: relative;}
+.ranking .inner {
+  position: relative;
+}
 .ranking-list {
   padding-top: 30px;
 }
@@ -1475,7 +1480,7 @@ section.quick {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.ranking-time{
+.ranking-time {
   position: absolute;
   top: 87px;
   right: 0;
@@ -1485,18 +1490,20 @@ section.quick {
 }
 /* 인기 계정 랭킹 반응형 */
 @media screen and (max-width: 1250px) {
-  .ranking-list{padding-top: 20px;}
+  .ranking-list {
+    padding-top: 20px;
+  }
   .ranking-list .count {
     width: 17px;
     height: 17px;
     line-height: 17px;
     font-size: 11px;
   }
-  .ranking-list ul li{
+  .ranking-list ul li {
     padding: 15px;
     height: 82px;
   }
-  .ranking-list .list-top a .profile-img{
+  .ranking-list .list-top a .profile-img {
     width: 50px;
     height: 50px;
     margin-right: 15px;
@@ -1515,20 +1522,24 @@ section.quick {
     height: 3px;
     left: -4px;
   }
-  .ranking-list .list-bottom{margin-top: 10px;}
+  .ranking-list .list-bottom {
+    margin-top: 10px;
+  }
   .ranking-list .list-bottom p {
     font-size: 14px;
   }
-  .ranking-time{font-size: 14px;}
+  .ranking-time {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 800px) {
-  .ranking .inner{
+  .ranking .inner {
     padding-bottom: 35px;
   }
   .ranking-list ul li {
     width: 70%;
   }
-  .ranking-time{
+  .ranking-time {
     display: block;
     width: 100%;
     text-align: center;
@@ -2096,7 +2107,7 @@ section.guide {
 .footer ul {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 .footer a.link {
   color: #fff;
@@ -2121,39 +2132,46 @@ section.guide {
 .footer .footer-top .footer-info {
 }
 .footer .footer-top .footer-info ul {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .footer .footer-top .footer-info ul:last-child {
   margin-bottom: 0;
+}
+.footer .footer-top .footer-info ul li {
+  line-height: 1.9;
 }
 .footer .footer-top .footer-cs {
 }
 .footer .footer-top .footer-cs > li {
 }
 .footer .footer-top .footer-menu {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   border-radius: 5px;
   background: #3e3e3e;
+  margin-bottom: 35px;
 }
-.footer .footer-top .footer-menu > li {
+.footer .footer-top .footer-menu ul {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0;
 }
-.footer .footer-top .footer-menu > li::after {
+.footer .footer-top .footer-menu ul > li {
+  text-align: center;
+}
+.footer .footer-top .footer-menu ul > li::after {
   display: none;
 }
-.footer .footer-top .footer-menu > li a {
+.footer .footer-top .footer-menu ul > li a {
   display: block;
   padding: 17px 0;
   color: #fff;
 }
-.footer .footer-top .footer-menu > li a:hover {
+.footer .footer-top .footer-menu ul > li a:hover {
   text-decoration: underline;
 }
-.footer .footer-top .footer-menu > li a .icon-arrow {
+.footer .footer-top .footer-menu ul > li a .icon-arrow {
   font-size: 0;
 }
-.footer .footer-top .footer-menu > li a .icon-arrow::after {
+.footer .footer-top .footer-menu ul > li a .icon-arrow::after {
   display: inline-block;
   content: "";
   width: 6px;
@@ -2162,6 +2180,9 @@ section.guide {
   margin-left: 10px;
   background: url(/images/icon_arrow_r.png) no-repeat center;
   background-size: contain;
+}
+.footer .footer-top .footer-menu .m-footer-menu {
+  display: none;
 }
 .footer .footer-top .footer-tel {
 }
@@ -2179,10 +2200,94 @@ section.guide {
   margin-bottom: 0;
 }
 .footer .footer-bottom ul > li {
-  margin-bottom: 10px;
+  line-height: 2;
 }
 .footer .footer-bottom ul > li:last-child {
   margin-bottom: 0;
+}
+/* 하단 반응형 작업 */
+@media screen and (max-width: 1250px) {
+  .footer {
+    padding: 45px 0;
+    font-size: 14px;
+  }
+  .footer ul {
+    margin-bottom: 25px;
+  }
+  .footer .footer-top .footer-menu ul {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .footer .footer-top .footer-menu ul > li a .icon-arrow::after {
+    width: 4px;
+    height: 8px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer .footer-top .footer-menu ul {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    font-size: 11px;
+  }
+  .footer ul {
+    margin-bottom: 20px;
+  }
+  .footer .footer-top {
+    border-bottom: 0.5px solid #494949;
+    padding-bottom: 20px;
+  }
+  .footer .footer-top .footer-menu {
+    display: flex;
+    gap: 0 15px;
+    background: transparent;
+    border-radius: 0;
+    margin-bottom: 15px;
+  }
+  .footer .footer-top ul li::after {
+    display: none;
+  }
+  .footer .footer-top .footer-menu ul {
+    padding: 15px;
+  }
+  .footer .footer-top .footer-menu ul > li {
+    text-align: left;
+    overflow: hidden;
+  }
+  .footer .footer-top .footer-menu ul > li a {
+    font-size: 12px;
+    padding: 9px 0;
+  }
+  .footer .footer-top .footer-menu ul > li a .icon-arrow {
+    float: right;
+  }
+  .footer .footer-top .footer-menu ul > li a .icon-arrow::after {
+    vertical-align: -10px;
+  }
+  .footer .footer-top .footer-menu .pc-footer-menu {
+    display: none;
+  }
+  .footer .footer-top .footer-menu .m-footer-menu {
+    display: block;
+    background: #3e3e3e;
+    border-radius: 5px;
+    width: 100%;
+  }
+  .footer .footer-top .footer-info ul li {
+    margin-right: 15px;
+  }
+  .footer .footer-top .footer-tel li:last-child {
+    width: 100%;
+  }
+  .footer .footer-top .footer-address li {
+    width: 100%;
+  }
+  .footer .footer-bottom {
+    padding-top: 20px;
+  }
 }
 
 /* 메인화면 고정 퀵메뉴 */
@@ -2240,3 +2345,4 @@ section.guide {
   background: url(/images/icon_fix_top.png) no-repeat center;
   background-size: contain;
 }
+/* 메인화면 고정 퀵메뉴 반응형 작업 */
