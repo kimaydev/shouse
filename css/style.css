@@ -1695,7 +1695,6 @@ section.quick {
     display: flex;
   }
 }
-
 /* 싱싱튜브 */
 .singtube {
 }
@@ -1703,7 +1702,7 @@ section.quick {
 }
 .singtube .tube-gallery ul {
   display: flex;
-  gap: 40px 20px;
+  gap: 40px 30px;
   flex-wrap: wrap;
 }
 .singtube .tube-gallery ul li {
@@ -1790,6 +1789,23 @@ section.quick {
 }
 .singtube .tube-gallery ul li a:hover p {
   text-decoration: underline;
+}
+@media screen and (max-width: 1246px) {
+  .singtube .tube-gallery .tube-link .tube-img .play {
+    width: 42px;
+    height: 42px;
+  }
+  .singtube .tube-gallery .tube-link .tube-img .play:after {
+    top: calc(50% - 5px);
+    left: calc(50% - 2px);
+    content: "";
+    border-top: 7px solid transparent;
+  }
+  .singtube .tube-gallery ul li a p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 767px) {
 }
 
 /* HOT Keyword */
