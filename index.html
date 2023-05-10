@@ -447,7 +447,7 @@
             </ul>
           </div>
           <div class="list_box">
-            <ul class="m-tab-list">
+            <ul class="m-tab-list on">
               <li>
                 <a href="#">홈</a>
               </li>
@@ -488,6 +488,55 @@
               </li>
               <li>
                 <a href="#">이벤트</a>
+              </li>
+            </ul>
+            <ul class="m-tab-list">
+              <li>
+                <a href="#">스토리</a>
+                <ul class="list-submenu">
+                  <li>
+                    <a href="#">희귀식물</a>
+                  </li>
+                  <li>
+                    <a href="#">식물/플라워</a>
+                  </li>
+                  <li>
+                    <a href="#">플랜테리어</a>
+                  </li>
+                  <li>
+                    <a href="#">가드닝용품</a>
+                  </li>
+                  <li>
+                    <a href="#">DIY/체험</a>
+                  </li>
+                  <li>
+                    <a href="#">친환경</a>
+                  </li>
+                  <li>
+                    <a href="#">기타</a>
+                  </li>
+                  <li>
+                    <a href="#">100원딜</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="list-menu">싱싱튜브</a>                
+              </li>
+              <li>
+                <a href="#">가이드</a>
+              </li>
+              <li>
+                <a href="#">매거진</a>
+              </li>
+              <li>
+                <a href="#">조경/시공</a>
+              </li>
+              <li>
+                <a href="#">싱그런 여행</a>
+              </li>
+              <li>
+                <a href="#">식물마켓</a>
               </li>
             </ul>
           </div>                            
@@ -1050,15 +1099,29 @@
                   <p>인슷하@vertvertvertverr</p>
                 </div>
               </li>
+              <li class="swiper-slide">
+                <i class="count">2</i>
+                <div class="list-top">
+                  <a href="#">
+                    <span class="profile-img">
+                      <img
+                        src="images/ranking/ranking_img_2.jpg"
+                        alt="프로필 사진"
+                      />
+                    </span>
+                    <span class="profile-name"> 허니퍼니 </span>
+                  </a>
+                  <button class="follow-btn">팔로우</button>
+                </div>
+                <div class="list-bottom">
+                  <p></p>
+                </div>
+              </li>
             </ul>
           </div>
-          <!-- ranking-swiper -->
-          <script>
-            let rankingSwiper = new Swiper(".rank-swiper", {
-              slidesPerView: 4,
-              spaceBetween: 20,
-            });
-          </script>
+          <p class="ranking-time">
+            <span class="ranking-time-start">2023.05.01</span>~<span class="ranking-time-end">2023.05.07</span> 기준
+          </p>
         </div>
       </section>
       <!-- //인기 계정 랭킹 -->
@@ -1674,13 +1737,19 @@
             <img src="images/icon_fix_kakao.png" alt="카카오채널 바로가기" />
           </a>
         </li>
-        <li>
+        <li class="top-btn-box">
           <a href="#" class="top-btn">
             <span>
               <i class="icon-top"></i>
               TOP
             </span>
-          </a>
+          </a>          
+        </li>
+        <li class="write-btn-box">
+          <button class="write-btn">
+            <i class="icon-write"></i>
+            <span>글쓰기</span>
+          </button>
         </li>
       </ul>
       <!--// 메인화면 퀵메뉴 -->
@@ -1692,29 +1761,58 @@
               <li>고객문의 : cs@cona.world</li>
               <li>제휴문의 : cooperate@cona.world</li>
             </ul>
-            <ul class="footer-menu">
-              <li>
-                <a href="#"> 공지사항<i class="icon-arrow"></i> </a>
-              </li>
-              <li>
-                <a href="#"> 브랜드 스토리<i class="icon-arrow"></i> </a>
-              </li>
-              <li>
-                <a href="#"> 개인정보처리방침<i class="icon-arrow"></i> </a>
-              </li>
-              <li>
-                <a href="#"> 서비스 이용약관<i class="icon-arrow"></i> </a>
-              </li>
-              <li>
-                <a href="#"> 고객상담<i class="icon-arrow"></i> </a>
-              </li>
-              <li>
-                <a href="#"> 판매자 신청<i class="icon-arrow"></i> </a>
-              </li>
-              <li>
-                <a href="#"> 사업자 구매회원 신청<i class="icon-arrow"></i> </a>
-              </li>
-            </ul>
+            <div class="footer-menu">
+              <!-- pc 푸터 메뉴 -->
+              <ul class="pc-footer-menu">
+                <li>
+                  <a href="#"> 공지사항<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 브랜드 스토리<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 개인정보처리방침<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 서비스 이용약관<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 고객상담<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 판매자 신청<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 사업자 구매회원 신청<i class="icon-arrow"></i> </a>
+                </li>
+              </ul>
+              <!-- 모바일 푸터 메뉴 -->
+              <ul class="m-footer-menu menu-left">
+                <li>
+                  <a href="#"> 공지사항<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 브랜드 스토리<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 개인정보처리방침<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 서비스 이용약관<i class="icon-arrow"></i> </a>
+                </li>
+              </ul>
+              <ul class="m-footer-menu menu-right">
+                <li>
+                  <a href="#"> 고객상담<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 판매자 신청<i class="icon-arrow"></i> </a>
+                </li>
+                <li>
+                  <a href="#"> 사업자 구매회원 신청<i class="icon-arrow"></i> </a>
+                </li>
+              </ul>
+            </div>
             <div class="footer-info">
               <ul class="footer-tel">
                 <li>대표번호 : 1899-9137</li>
