@@ -1128,6 +1128,16 @@ section.quick {
   line-height: 40px;
   background: url("../images/arrow19_r.png") no-repeat right center / 6px auto;
 }
+/* .story .story-gallery .btn-wrap a span::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 15px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  
+} */
 .story .story-list {
   display: flex;
   padding-top: 30px;
@@ -1236,7 +1246,7 @@ section.quick {
 }
 @media screen and (max-width: 1246px) {
   .story .subtitle {
-    line-height: 32px;
+    /* line-height: 32px;
     font-size: 23px;
     color: #222624;
   }
@@ -1284,14 +1294,13 @@ section.quick {
   }
 }
 
-
 @media screen and (max-width: 767px) {
-  /* .story .subtitle {
-    /* /* font-size: 22px;
+  .story .subtitle {
+    /* font-size: 22px;
     line-height: 29px;
     margin-top: -4px;
     margin-bottom: -4px; */
-  
+  }
 
   .story .s-menu li a {
     line-height: 37px;
@@ -1333,7 +1342,7 @@ section.quick {
     line-height: 20px;
     font-weight: 400;
     margin: 11px 0 0 -4px;
-  } */
+  }
 }
 
 /* 인기 계정 랭킹 */
