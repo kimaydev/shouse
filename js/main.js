@@ -48,17 +48,32 @@ window.onload = function () {
     });
   });
   // header mobile sitemap accordion action
-  let mbListMenu = document.querySelector(".m-tab-list .list-menu");  
-  let i;
-  mbListMenu.addEventListener("click", function(){
-    mbListMenu.classList.toggle("on");
-  });
+  // let mbListMenu = document.querySelector(".m-tab-list .list-menu");  
+  // let i;
+  // mbListMenu.addEventListener("click", function(){
+  //   mbListMenu.classList.toggle("on");
+  // });
   // let mbListSubMenu = document.querySelectorAll(".m-tab-list .list-submenu");  
   // for(i = 0; i < mbListMenu; i++){
   //   mbListMenu[i].addEventListener("click", function(){
   //     mbListMenu.classList.toggle("on");
   //   });
   // }  
+
+  // fix quick menu scroll top
+  const goTop = document.querySelector(".fix-quick-menu .top-btn");
+  const scrollElement =
+    window.document.scrollingElement ||
+    window.document.body ||
+    window.document.documentElement;
+  goTop.addEventListener("click", function () {
+    anime({
+      targets: scrollElement,
+      scrollTop: 0,
+      duration: 500,
+      easing: "easeInOutQuad",
+    });
+  });
   // visual swiper slide
   let visualSwiper = new Swiper(".v-swiper", {
     loop: true,

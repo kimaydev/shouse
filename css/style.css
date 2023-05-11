@@ -8,8 +8,8 @@ body {
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   letter-spacing: -0.6px;
   line-height: 1;
-  outline: none;
-  overflow-x: hidden;
+  outline: none;  
+  /* overflow-x: hidden; */
 }
 a {
   color: #000;
@@ -2487,7 +2487,7 @@ section.guide {
   margin-bottom: 0;
 }
 .fix-quick-menu > li a,
-.fix-quick-menu > li .write-btn{
+.fix-quick-menu > li .fix-quick-btn{
   display: block;
   width: 60px;
   height: 60px;
@@ -2503,14 +2503,14 @@ section.guide {
   display: block;
   width: 100%;
 }
-.fix-quick-menu > li a.top-btn,
-.fix-quick-menu > li .write-btn{
+.fix-quick-menu > li .fix-quick-btn{
   position: relative;
   color: #fff;
   background: #009a3e;
   border: 2px solid #008033;
+  cursor: pointer;
 }
-.fix-quick-menu > li a.top-btn span {
+.fix-quick-menu > li .fix-quick-btn span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -2521,9 +2521,7 @@ section.guide {
   font-weight: 700;
   text-align: center;
 }
-.fix-quick-menu > li a.top-btn .icon-top {
-}
-.fix-quick-menu > li a.top-btn .icon-top::after {
+.fix-quick-menu > li .fix-quick-btn .icon-top::after {
   display: block;
   content: "";
   width: 8px;
@@ -2558,13 +2556,12 @@ section.guide {
   .fix-quick-menu > .write-btn-box{display: block;}
   .fix-quick-menu > li{margin-bottom: 7px;}
   .fix-quick-menu > li a,
-  .fix-quick-menu > li .write-btn{
+  .fix-quick-menu > li .fix-quick-btn{
     width: 40px;
     height: 40px;
     box-shadow: none;
   }
-  .fix-quick-menu > li a.top-btn,
-  .fix-quick-menu > li .write-btn{
+  .fix-quick-menu > li .fix-quick-btn{
     border: 1px solid #008033;
   }
 }
