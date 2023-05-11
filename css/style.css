@@ -103,6 +103,29 @@ body.active {
 .s-menu li a:hover {
   background: #d9d9d9;
 }
+
+/* 더보기 버튼 */
+
+.btn-wrap {
+  display: none;
+  justify-content: center;
+  margin-top: 30px;
+}
+.btn-wrap a {
+  background: #d9d9d9;
+  width: 235px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
+}
+.btn-wrap a span {
+  position: relative;
+  padding-right: 15px;
+  line-height: 40px;
+  background: url("../images/arrow19_r.png") no-repeat right center / 6px auto;
+}
+
 /* 공통 레이아웃 반응형 */
 @media screen and (max-width: 1250px) {
   .inner {
@@ -130,6 +153,11 @@ body.active {
   .inner {
     margin-left: 15px;
     margin-right: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .btn-wrap {
+    display: flex;
   }
 }
 
@@ -771,7 +799,7 @@ body.active {
   padding-left: 15px;
   padding-right: 15px;
 }
-.m-sitemap-list-container .m-tab-box .m-tab-list.on{
+.m-sitemap-list-container .m-tab-box .m-tab-list.on {
   display: block;
 }
 .m-sitemap-list-container .m-tab-box .m-tab-list > li {
@@ -1160,25 +1188,7 @@ section.quick {
 }
 .story .story-gallery {
 }
-.story .story-gallery .btn-wrap {
-  display: none;
-  justify-content: center;
-  margin-top: 30px;
-}
-.story .story-gallery .btn-wrap a {
-  background: #d9d9d9;
-  width: 235px;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
-}
-.story .story-gallery .btn-wrap a span {
-  position: relative;
-  padding-right: 15px;
-  line-height: 40px;
-  background: url("../images/arrow19_r.png") no-repeat right center / 6px auto;
-}
+
 .story .story-list {
   display: flex;
   padding-top: 30px;
@@ -1340,9 +1350,7 @@ section.quick {
   .story .story-list li:nth-child(n + 5):nth-child(-n + 8) {
     display: none;
   }
-  .story .story-gallery .btn-wrap {
-    display: flex;
-  }
+
   .story .story-user {
     min-height: 30px;
   }
@@ -1574,7 +1582,7 @@ section.quick {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px;
+  padding: 18px 40px;
 }
 .travel-list ul li a:hover .txt-top {
   text-decoration: underline;
@@ -1632,10 +1640,10 @@ section.quick {
 .travel-list .travel-right ul li {
   font-size: 14px;
   color: #b3b3b3;
-  margin-left: 15px;
+  margin-left: 18px;
 }
 .travel-list .travel-right ul li:last-child {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .travel-list .travel-right ul li .icon-like {
   display: inline-block;
@@ -1668,26 +1676,7 @@ section.quick {
   height: 12px;
   background-size: contain;
 }
-.travel .travel-list .btn-wrap {
-  display: none;
-  justify-content: center;
-  margin-top: 30px;
-}
-.travel .travel-list .btn-wrap a {
-  background: #d9d9d9;
-  width: 235px;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 300;
-}
-.travel .travel-list .btn-wrap a span {
-  position: relative;
-  padding-right: 15px;
-  line-height: 40px;
-  background: url(http://127.0.0.1:5501/css/../images/arrow19_r.png) no-repeat
-    right center / 6px auto;
-}
+
 @media screen and (max-width: 1246px) {
   .subtitle {
     font-size: 23px;
@@ -1788,9 +1777,6 @@ section.quick {
     height: 10px;
     background-size: cover;
   }
-  .travel .travel-list .btn-wrap {
-    display: flex;
-  }
 }
 /* 싱싱튜브 */
 .singtube {
@@ -1799,11 +1785,11 @@ section.quick {
 }
 .singtube .tube-gallery ul {
   display: flex;
-  gap: 40px 30px;
+  gap: 40px 20px;
   flex-wrap: wrap;
 }
 .singtube .tube-gallery ul li {
-  width: calc(94% / 3);
+  width: calc(100% / 3 - 15px);
 }
 .singtube .tube-gallery ul li a {
   width: 100%;
@@ -1813,7 +1799,6 @@ section.quick {
   border-radius: 4px;
   overflow: hidden;
   margin-bottom: 21px;
-  height: 223px;
 }
 .singtube .tube-gallery ul li a .tube-img::after {
   display: block;
@@ -1821,6 +1806,7 @@ section.quick {
   padding-bottom: 55%;
 }
 .singtube .tube-gallery ul li a .tube-img > img {
+  transition: all 0.6s;
   position: absolute;
   top: 0;
   left: 0;
@@ -1844,7 +1830,7 @@ section.quick {
   color: #4d4d4d;
   font-size: 14px;
   font-weight: 300;
-  margin: 21px 0 -3px;
+  line-height: 20px;
 }
 
 .singtube .tube-gallery .tube-link .tube-img .play {
@@ -1872,7 +1858,7 @@ section.quick {
   bottom: 6px;
   z-index: 11;
   width: 43px;
-  height: 42px;
+  height: 41px;
   border: none;
   background: none;
 }
@@ -1881,28 +1867,105 @@ section.quick {
   height: 100%;
 }
 .singtube .tube-gallery ul li a:hover .tube-img > img {
-  transition: all 0.4s;
-  transform: scale(1.06);
+  transform: scale(1.04);
 }
 .singtube .tube-gallery ul li a:hover p {
   text-decoration: underline;
 }
 @media screen and (max-width: 1246px) {
+  .singtube .tube-gallery ul {
+    gap: 40px 14px;
+  }
+  .singtube .tube-gallery ul li {
+    width: calc(100% / 3 - 13px);
+  }
+  .singtube .tube-gallery ul li a .tube-img {
+    margin-bottom: 15px;
+  }
   .singtube .tube-gallery .tube-link .tube-img .play {
+    top: calc(50% - 21px);
+    left: calc(50% - 21px);
     width: 42px;
     height: 42px;
   }
   .singtube .tube-gallery .tube-link .tube-img .play:after {
     top: calc(50% - 5px);
     left: calc(50% - 2px);
-    content: "";
-    border-top: 7px solid transparent;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 8px;
   }
   .singtube .tube-gallery ul li a p {
     font-size: 13px;
   }
+  .singtube .tube-gallery ul li a .tube-img .t-bt {
+    font-size: 11px;
+    line-height: 18px;
+    padding-right: 6px;
+    padding-left: 5px;
+  }
+  .singtube .tube-gallery ul li a .tube-img button {
+    right: 8px;
+    bottom: 8px;
+    width: 34px;
+    height: 30px;
+  }
 }
 @media screen and (max-width: 767px) {
+  .singtube .tube-gallery ul {
+  }
+  .singtube .tube-gallery ul li {
+    width: calc(100% / 2 - 13px);
+  }
+  .singtube .tube-gallery ul li:first-child {
+    width: 100%;
+  }
+  .singtube .tube-gallery ul li:last-child {
+    display: none;
+  }
+  .singtube .tube-gallery ul li a .tube-img {
+    margin-bottom: 11px;
+  }
+  .singtube .tube-gallery .tube-link .tube-img .play {
+    width: 30px;
+    height: 30px;
+  }
+  .singtube .tube-gallery ul li:first-child .tube-link .tube-img .play {
+    width: 50px;
+    height: 50px;
+  }
+  .singtube .tube-gallery .tube-link .tube-img .play:after {
+    top: calc(50% - 4px);
+    left: calc(50% - 2px);
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 6px;
+  }
+  .singtube .tube-gallery ul li:first-child .tube-link .tube-img .play:after {
+    top: calc(50% - 6px);
+    left: calc(50% - 3px);
+    border-top-width: 6px;
+    border-bottom-width: 6px;
+    border-left-width: 10px;
+  }
+  .singtube .tube-gallery ul li a .tube-img .t-bt {
+    font-size: 10px;
+    line-height: 20px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .singtube .tube-gallery ul li a .tube-img button {
+    right: 5px;
+    bottom: 10px;
+    width: 31px;
+    height: 27px;
+  }
+  .singtube .tube-gallery ul li a:hover p {
+    text-decoration: none;
+  }
+  .singtube .btn-wrap {
+    margin-top: 50px;
+  }
 }
 
 /* HOT Keyword */
@@ -2118,14 +2181,12 @@ section.quick {
 }
 /* MD;s Pick 반응형 */
 @media screen and (max-width: 1246px) {
-
 }
 @media screen and (max-width: 767px) {
   .pick .pick-middle .pick-img .pick-list li {
     width: calc(100% / 2 - 20px);
     margin-right: 20px;
   }
-  
 }
 /* 가이드북 */
 section.guide {
@@ -2133,7 +2194,7 @@ section.guide {
   /* height: auto; */
   padding: 60px 0 80px;
 }
-.guide {  
+.guide {
 }
 .guide .inner {
 }
@@ -2271,11 +2332,9 @@ section.guide {
 }
 /* CS반응형 */
 @media screen and (max-width: 1246px) {
- 
 }
 @media screen and (max-width: 767px) {
   .cs .cs-box2 {
-    
   }
 }
 
@@ -2535,12 +2594,15 @@ section.guide {
   background: url(/images/icon_fix_top.png) no-repeat center;
   background-size: contain;
 }
-.fix-quick-menu > .write-btn-box{display: none;}
-.fix-quick-menu > li .write-btn{
+.fix-quick-menu > .write-btn-box {
+  display: none;
+}
+.fix-quick-menu > li .write-btn {
   font-size: 0;
 }
-.fix-quick-menu > li .write-btn .icon-write{}
-.fix-quick-menu > li .write-btn .icon-write::after{
+.fix-quick-menu > li .write-btn .icon-write {
+}
+.fix-quick-menu > li .write-btn .icon-write::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -2553,13 +2615,19 @@ section.guide {
 }
 /* 메인화면 고정 퀵메뉴 반응형 작업 */
 @media screen and (max-width: 800px) {
-  .fix-quick-menu{
+  .fix-quick-menu {
     right: 13px;
     bottom: 65px;
   }
-  .fix-quick-menu > .top-btn-box{display: none;}
-  .fix-quick-menu > .write-btn-box{display: block;}
-  .fix-quick-menu > li{margin-bottom: 7px;}
+  .fix-quick-menu > .top-btn-box {
+    display: none;
+  }
+  .fix-quick-menu > .write-btn-box {
+    display: block;
+  }
+  .fix-quick-menu > li {
+    margin-bottom: 7px;
+  }
   .fix-quick-menu > li a,
   .fix-quick-menu > li .fix-quick-btn{
     width: 40px;
