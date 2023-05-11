@@ -28,37 +28,68 @@ window.onload = function () {
     sitemapBgc.classList.remove("active");
     mbSitemap.classList.remove("active");
   });
-  mbSitemap.addEventListener("click", function(e){
+  mbSitemap.addEventListener("click", function (e) {
     e.stopPropagation();
     // event stop
   });
-  // header mobile sitemap tabmenu  
+  // header mobile sitemap tabmenu
   let mbTabBtn = document.querySelectorAll(".m-tab-box .m-tab-btn > li");
   let mbTabList = document.querySelectorAll(".m-tab-box .m-tab-list");
   mbTabBtn.forEach((tabBtn, idx) => {
-    tabBtn.addEventListener("click", function(){
-      mbTabList.forEach((list)=> {
+    tabBtn.addEventListener("click", function () {
+      mbTabList.forEach((list) => {
         list.classList.remove("on");
       });
-      mbTabBtn.forEach((btn)=> {
-          btn.classList.remove("on");
+      mbTabBtn.forEach((btn) => {
+        btn.classList.remove("on");
       });
       mbTabBtn[idx].classList.add("on");
       mbTabList[idx].classList.add("on");
     });
   });
   // header mobile sitemap accordion action
-  let mbListMenu = document.querySelector(".m-tab-list .list-menu");  
-  let i;
-  mbListMenu.addEventListener("click", function(){
-    mbListMenu.classList.toggle("on");
-  });
-  // let mbListSubMenu = document.querySelectorAll(".m-tab-list .list-submenu");  
+  // let mbListMenu = document.querySelector(".m-tab-list .list-menu");
+  // let i;
+  // mbListMenu.addEventListener("click", function(){
+  //   mbListMenu.classList.toggle("on");
+  // });
+  // let mbListSubMenu = document.querySelectorAll(".m-tab-list .list-submenu");
   // for(i = 0; i < mbListMenu; i++){
   //   mbListMenu[i].addEventListener("click", function(){
   //     mbListMenu.classList.toggle("on");
   //   });
-  // }  
+  // }
+
+  // fix quick menu scroll top
+  const goTop = document.querySelector(".fix-quick-menu .top-btn");
+  const scrollElement =
+    window.document.scrollingElement ||
+    window.document.body ||
+    window.document.documentElement;
+  goTop.addEventListener("click", function () {
+    anime({
+      targets: scrollElement,
+      scrollTop: 0,
+      duration: 500,
+      easing: "easeInOutQuad",
+    });
+  });
+  // fix quick menu scroll fade
+  let fixQuickMenu = document.querySelector(".fix-quick-menu");
+  let scrollFunction = function () {
+    if (window.scrollY <= 0) {
+      fixQuickMenu.classList.remove("active");
+    } else {
+      fixQuickMenu.classList.add("active");
+    }
+  };
+  let aaaFunction = function () {
+    console.log(123);
+  };
+  // document.addEventListener("scroll", scrollFunction);
+  // window.addEventListener("resize", aaaFunction);
+  // window.addEventListener("load", aaaFunction);
+
   // visual swiper slide
   let visualSwiper = new Swiper(".v-swiper", {
     loop: true,
@@ -111,7 +142,7 @@ window.onload = function () {
     slidesPerView: "auto",
     spaceBetween: 15,
     freeMode: true,
-    breakpoints: {      
+    breakpoints: {
       800: {
         slidesPerView: 3,
         spaceBetween: 15,
