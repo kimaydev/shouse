@@ -1209,7 +1209,7 @@ section.quick {
 }
 .pick .pick-middle .list-top .img img:hover {
   transform: scale(1.1);
-  transition: transform 0.4s;
+  transition: transform 1.5s;
 }
 .pick .pick-middle .list-top:hover .text p {
   text-decoration: underline;
@@ -1258,7 +1258,7 @@ section.quick {
 }
 .pick .pick-middle .list-down .img img:hover {
   transform: scale(1.1);
-  transition: transform 0.4s;
+  transition: transform 1.5s;
 }
 .pick .pick-middle .list-down:hover .text p {
   text-decoration: underline;
@@ -1271,6 +1271,14 @@ section.quick {
 .pick .pick-list {
 }
 .pick .pick-bottom {
+}
+@media screen and (max-width: 1246px) {
+
+}
+@media screen and (max-width: 767px) {
+  .pick .pick-middle .pick-img .pick-list li {
+    width: calc(100% / 2 - 20px);
+  }
 }
 
 /* 가이드북 */
@@ -1326,6 +1334,22 @@ section.guide {
   font-size: 0;
   border: 0;
 }
+@media screen and (max-width: 1246px) {
+  .guide .swiper-slide {
+    width: calc(100% - 42px / 4);
+  }
+}
+@media screen and (max-width: 767px) {
+  .guide .guide-title {
+    font-size: 22px;
+    line-height: 29px;
+    margin-top: -4px;
+    margin-bottom: 15px;
+  }
+  .guide .swiper-slide {
+    width: 57%;
+  }
+}
 .sw-prev {
   position: absolute;
   left: 0;
@@ -1347,7 +1371,7 @@ section.guide {
 
 /* 싱그러움을 전해보세요 */
 .cs {
-  margin: 80px;
+  margin: 80px 0;
 }
 .cs .inner {
 }
@@ -1360,7 +1384,7 @@ section.guide {
 
 .cs .cs-box1 {
   position: relative;
-  width: 590px;
+  width: calc(50% - 10px);
   height: 100px;
   background-color: #f2f2f2;
   margin-bottom: 10px;
@@ -1372,13 +1396,13 @@ section.guide {
 .cs .cs-box1 .cs-icon {
   position: absolute;
   width: 40px;
-  height: 40px;
+  height:  40px;
   top: calc(50% - 20px);
   right: 40px;
 }
 .cs .cs-box2 {
   position: relative;
-  width: 590px;
+  width: calc(50% - 10px);
   height: 100px;
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -1414,6 +1438,46 @@ section.guide {
   font-size: 14px;
   color: #808080;
 }
+@media screen and (max-width: 1246px) {
+
+}
+@media screen and (max-width: 767px) {
+  .cs .cs-box1 {
+    width: calc(50% - 8px);
+    height: 117px;
+  }
+  .cs .cs-box2 {
+    width: calc(50% - 8px - 20px);
+    height: 117px;
+  }
+  .cs .cs-title {
+    font-size: 22px;  
+    margin-top: -4px;
+    margin-bottom: -4px;
+  }
+  .cs .inner .desc {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .cs .cs-box1 .cs-icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 17px;
+    width: 33px;
+    height: 33px;
+    right: 10.6%;
+    top: auto;
+  }
+  .cs .cs-box2 .cs-icon {
+    display: inline-block;
+    position: absolute;
+    bottom: 17px;
+    width: 33px;
+    height: 33px;
+    right: 10.6%;
+    top: auto;
+  }
+}
 /* 하단 */
 .footer {
   font-size: 15px;
@@ -1424,7 +1488,7 @@ section.guide {
 }
 .footer ul {
   display: flex;
-  flex-wrap: wrap;
+  flex- : wrap;
   margin-bottom: 30px;
 }
 .footer a.link {

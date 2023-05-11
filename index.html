@@ -1448,12 +1448,22 @@
                 </div>
               </div>
               <!-- guide slide -->
-              <script>
+              <!-- <script>
                 new Swiper(".sw-guide", {
-                  slidesPerView: 4,
-                  spaceBetween: 15
+                  breakpoints: {
+                    // 화면의 넓이가 320px 이상일 때
+                    320: {
+                      slidesPerView: 1.5,
+                      spaceBetween: 20
+                    },
+                    // 화면의 넓이가 640px 이상일 때
+                    768: {
+                      slidesPerView: 4,
+                      spaceBetween: 15
+                    }
+                  }
                 })
-              </script>
+              </script> -->
           </div>
         </div>
 
@@ -1461,8 +1471,9 @@
       <!-- //가이드북 -->
       <!-- 싱그러움을 전해보세요 -->
       <section class="cs">
-        <div class="inner clearfix  ">
+        <div class="inner">
           <h3 class="cs-title">싱그러움을 전해보세요</h3>
+          <div class="box clearfix">
           <div class="cs-box1">
             <p class="seller-title">판매자 신청</p>
             <p class="desc">싱그러운집과 함께 해요</p>
@@ -1473,6 +1484,7 @@
             <p class="desc">VVIP혜택을 누려보세요</p>
             <img src="./images/icon_color_3.png" alt="집아이콘" class="cs-icon">
           </div>
+        </div>
         </div>
         
         

@@ -36,9 +36,7 @@ window.onload = function () {
       prevEl: ".v-prev",
     },
   });
-};
-
-// keyword swiper
+  // keyword swiper
 new Swiper(".sw-keyword", {
   slidesPerView: "auto",
   speed: 600,
@@ -46,4 +44,22 @@ new Swiper(".sw-keyword", {
   allowTouchMove: true,
   spaceBetween: 0, 
 });
+// guide slide
+new Swiper(".sw-guide", {
+  breakpoints: {
+    // 화면의 넓이가 320px 이상일 때
+    320: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    },
+    // 화면의 넓이가 640px 이상일 때
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 15
+    }
+  }
+})
+};
+
+
           
