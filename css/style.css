@@ -9,7 +9,7 @@ body {
   letter-spacing: -0.6px;
   line-height: 1;
   outline: none;  
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 a {
   color: #000;
@@ -2479,6 +2479,11 @@ section.guide {
   right: 30px;
   bottom: 30px;
   z-index: 999;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.fix-quick-menu.active{
+  opacity: 1;
 }
 .fix-quick-menu > li {
   margin-bottom: 10px;
@@ -2517,7 +2522,7 @@ section.guide {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: 12px;
+  /* font-size: 12px; */
   font-weight: 700;
   text-align: center;
 }
