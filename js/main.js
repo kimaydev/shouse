@@ -107,7 +107,7 @@ window.onload = function () {
       prevEl: ".v-prev",
     },
   });
-<<<<<<< HEAD
+
   // keyword swiper
 new Swiper(".sw-keyword", {
   slidesPerView: "auto",
@@ -131,11 +131,7 @@ new Swiper(".sw-guide", {
     }
   }
 })
-};
 
-
-          
-=======
   //recommend swiper slide
   let recommendSwiper = new Swiper(".recommend-gallery", {
     slidesPerView: 3,
@@ -188,4 +184,3 @@ new Swiper(".sw-guide", {
     spaceBetween: 0,
   });
 };
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6

@@ -2179,26 +2179,15 @@ section.quick {
 }
 .pick .pick-bottom {
 }
-<<<<<<< HEAD
 @media screen and (max-width: 1246px) {
 
-=======
-/* MD;s Pick 반응형 */
-@media screen and (max-width: 1246px) {
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
 }
 @media screen and (max-width: 767px) {
   .pick .pick-middle .pick-img .pick-list li {
     width: calc(100% / 2 - 20px);
-<<<<<<< HEAD
   }
 }
 
-=======
-    margin-right: 20px;
-  }
-}
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
 /* 가이드북 */
 section.guide {
   background-color: #f2f2f2;
@@ -2303,11 +2292,7 @@ section.guide {
 
 .cs .cs-box1 {
   position: relative;
-<<<<<<< HEAD
   width: calc(50% - 10px);
-=======
-  width: calc(100% / 2 - 10px);
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
   height: 100px;
   background-color: #f2f2f2;
   margin-bottom: 10px;
@@ -2318,11 +2303,8 @@ section.guide {
 }
 .cs .cs-box1 .cs-icon {
   position: absolute;
-<<<<<<< HEAD
   width: 40px;
   height:  40px;
-=======
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
   top: calc(50% - 20px);
   right: 40px;
   width: 40px;
@@ -2330,11 +2312,7 @@ section.guide {
 }
 .cs .cs-box2 {
   position: relative;
-<<<<<<< HEAD
   width: calc(50% - 10px);
-=======
-  width: calc(100% / 2 - 10px);
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
   height: 100px;
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -2370,7 +2348,6 @@ section.guide {
   font-size: 14px;
   color: #808080;
 }
-<<<<<<< HEAD
 @media screen and (max-width: 1246px) {
 
 }
@@ -2411,16 +2388,6 @@ section.guide {
     top: auto;
   }
 }
-=======
-/* CS반응형 */
-@media screen and (max-width: 1246px) {
-}
-@media screen and (max-width: 767px) {
-  .cs .cs-box2 {
-  }
-}
-
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
 /* 하단 */
 .footer {
   font-size: 15px;
@@ -2431,13 +2398,8 @@ section.guide {
 }
 .footer ul {
   display: flex;
-<<<<<<< HEAD
-  flex- : wrap;
-  margin-bottom: 30px;
-=======
   flex-wrap: wrap;
   margin-bottom: 35px;
->>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
 }
 .footer a.link {
   color: #fff;
