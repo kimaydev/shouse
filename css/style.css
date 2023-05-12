@@ -1979,7 +1979,7 @@ section.quick {
   line-height: 63px;
 }
 .keyword-wrap {
-  padding: 60px 40px;
+  padding: 60px 0;
   background: #f2faf5 url("../images/hotkeyword/hotkeyword.jpg") no-repeat right
     center;
   background-size: 33.8% auto;
@@ -2004,6 +2004,7 @@ section.quick {
 }
 
 .sw-keyword .swiper-wrapper .swiper-slide {
+  width: auto;
   white-space: nowrap;
   text-align: center;
 }
@@ -2018,7 +2019,6 @@ section.quick {
   }
   .keyword .swiper-slide-active {
     padding: 0 22px;
-    width: auto;
   }
 }
 @media screen and (max-width: 767px) {
@@ -2149,7 +2149,6 @@ section.quick {
 }
 .pick .pick-middle .list-down .text p {
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
   line-height: 20px;
   font-size: 14px;
@@ -2265,7 +2264,6 @@ section.guide {
   transform: translate(-50%, -50%);
   background: url("../images/icon_visual_prev.png") no-repeat center;
   z-index: 999;
-  background-color: rgba(0, 154, 62, 0.9);
 }
 .sw-next {
   position: absolute;
@@ -2274,6 +2272,11 @@ section.guide {
   transform: translate(50%, -50%);
   background: url("../images/icon_visual_next.png") no-repeat center;
   z-index: 999;
+}
+.sw-bt{
+  background-color: rgba(0, 154, 62, 0.9);
+}
+.sw-bt.swiper-button-disabled {
   background-color: rgba(0, 0, 0, 0.6);
 }
 

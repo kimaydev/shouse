@@ -113,6 +113,10 @@ new Swiper(".sw-keyword", {
 });
 // guide slide
 new Swiper(".sw-guide", {
+  navigation: {
+    nextEl: ".guide .sw-next",
+    prevEl: ".guide .sw-prev",
+  },
   breakpoints: {
     // 화면의 넓이가 320px 이상일 때
     320: {
