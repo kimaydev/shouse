@@ -107,6 +107,35 @@ window.onload = function () {
       prevEl: ".v-prev",
     },
   });
+<<<<<<< HEAD
+  // keyword swiper
+new Swiper(".sw-keyword", {
+  slidesPerView: "auto",
+  speed: 600,
+  loop: false,
+  allowTouchMove: true,
+  spaceBetween: 0, 
+});
+// guide slide
+new Swiper(".sw-guide", {
+  breakpoints: {
+    // 화면의 넓이가 320px 이상일 때
+    320: {
+      slidesPerView: 1.5,
+      spaceBetween: 20
+    },
+    // 화면의 넓이가 640px 이상일 때
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 15
+    }
+  }
+})
+};
+
+
+          
+=======
   //recommend swiper slide
   let recommendSwiper = new Swiper(".recommend-gallery", {
     slidesPerView: 3,
@@ -159,3 +188,4 @@ window.onload = function () {
     spaceBetween: 0,
   });
 };
+>>>>>>> 001f7da65fee58f6dd74930daed5b3831f1485e6
