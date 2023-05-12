@@ -2,13 +2,13 @@
 @import url(font.css);
 
 /* CSS 기본 설정 */
+*{outline: none;}
 html,
 body {
   min-width: 320px;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   letter-spacing: -0.6px;
-  line-height: 1;
-  outline: none;  
+  line-height: 1;  
   overflow-x: hidden;
 }
 a {

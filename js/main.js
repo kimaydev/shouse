@@ -83,12 +83,7 @@ window.onload = function () {
       fixQuickMenu.classList.add("active");
     }
   };
-  let aaaFunction = function () {
-    console.log(123);
-  };
-  // document.addEventListener("scroll", scrollFunction);
-  // window.addEventListener("resize", aaaFunction);
-  // window.addEventListener("load", aaaFunction);
+  document.addEventListener("scroll", scrollFunction);
 
   // visual swiper slide
   let visualSwiper = new Swiper(".v-swiper", {
