@@ -3,7 +3,6 @@
 </div>
 <br/>
 <br/>
-<br/>
 <div align="center">  
   <h3>
     :deciduous_tree:<br/>
@@ -44,7 +43,6 @@
   <br/>
   <img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=slack&logoColor=fff"/>
 </div>
-<br/>
 <br/>
 <br/>
 <div align="center">
