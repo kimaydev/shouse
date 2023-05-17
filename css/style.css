@@ -2,15 +2,13 @@
 @import url(font.css);
 
 /* CSS 기본 설정 */
-* {
-  outline: none;
-}
+*{outline: none;}
 html,
 body {
   min-width: 320px;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   letter-spacing: -0.6px;
-  line-height: 1;
+  line-height: 1;  
   overflow-x: hidden;
 }
 a {
@@ -2151,6 +2149,7 @@ section.quick {
 }
 .pick .pick-middle .list-down .text p {
   white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
   line-height: 20px;
   font-size: 14px;
@@ -2181,6 +2180,7 @@ section.quick {
 .pick .pick-bottom {
 }
 @media screen and (max-width: 1246px) {
+
 }
 @media screen and (max-width: 767px) {
   .pick .pick-middle .pick-img .pick-list li {
@@ -2274,7 +2274,7 @@ section.guide {
   background: url("../images/icon_visual_next.png") no-repeat center;
   z-index: 999;
 }
-.sw-bt {
+.sw-bt{
   background-color: rgba(0, 154, 62, 0.9);
 }
 .sw-bt.swiper-button-disabled {
@@ -2308,7 +2308,7 @@ section.guide {
 .cs .cs-box1 .cs-icon {
   position: absolute;
   width: 40px;
-  height: 40px;
+  height:  40px;
   top: calc(50% - 20px);
   right: 40px;
   width: 40px;
@@ -2353,6 +2353,7 @@ section.guide {
   color: #808080;
 }
 @media screen and (max-width: 1246px) {
+
 }
 @media screen and (max-width: 767px) {
   .cs .cs-box1 {
@@ -2364,7 +2365,7 @@ section.guide {
     height: 117px;
   }
   .cs .cs-title {
-    font-size: 22px;
+    font-size: 22px;  
     margin-top: -4px;
     margin-bottom: -4px;
   }
@@ -2594,7 +2595,7 @@ section.guide {
   opacity: 0;
   transition: opacity 0.3s;
 }
-.fix-quick-menu.active {
+.fix-quick-menu.active{
   opacity: 1;
 }
 .fix-quick-menu > li {
@@ -2604,7 +2605,7 @@ section.guide {
   margin-bottom: 0;
 }
 .fix-quick-menu > li a,
-.fix-quick-menu > li .fix-quick-btn {
+.fix-quick-menu > li .fix-quick-btn{
   display: block;
   width: 60px;
   height: 60px;
@@ -2620,7 +2621,7 @@ section.guide {
   display: block;
   width: 100%;
 }
-.fix-quick-menu > li .fix-quick-btn {
+.fix-quick-menu > li .fix-quick-btn{
   position: relative;
   color: #fff;
   background: #009a3e;
@@ -2682,12 +2683,12 @@ section.guide {
     margin-bottom: 7px;
   }
   .fix-quick-menu > li a,
-  .fix-quick-menu > li .fix-quick-btn {
+  .fix-quick-menu > li .fix-quick-btn{
     width: 40px;
     height: 40px;
     box-shadow: none;
   }
-  .fix-quick-menu > li .fix-quick-btn {
+  .fix-quick-menu > li .fix-quick-btn{
     border: 1px solid #008033;
   }
 }
