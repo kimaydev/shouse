@@ -1785,11 +1785,11 @@ section.quick {
 }
 .singtube .tube-gallery ul {
   display: flex;
-  gap: 40px 20px;
+  gap: 40px 15px;
   flex-wrap: wrap;
 }
 .singtube .tube-gallery ul li {
-  width: calc(100% / 3 - 15px);
+  width: calc(100% / 3 - 10px);
 }
 .singtube .tube-gallery ul li a {
   width: 100%;
