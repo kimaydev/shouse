@@ -267,11 +267,11 @@ body.active {
   width: 26px;
   height: 26px;
   border: 0;
-  background: transparent url(/images/nav_btn.png) no-repeat center;
+  background: transparent url(../images/nav_btn.png) no-repeat center;
   cursor: pointer;
 }
 .header .bottom .nav .left .sitemap-btn:hover {
-  background-image: url(/images/nav_btn_hover.png);
+  background-image: url(../images/nav_btn_hover.png);
 }
 .header .bottom .nav .left .gnb {
   margin-left: 30px;
@@ -380,7 +380,7 @@ body.active {
   width: 16px;
   height: 16px;
   border: 0;
-  background: url(/images/search_btn.png) no-repeat center;
+  background: url(../images/search_btn.png) no-repeat center;
 }
 
 .header .sitemap-list-wrap {
@@ -454,7 +454,7 @@ body.active {
 .header.active {
 }
 .header.active .bottom .nav .left .sitemap-btn {
-  background-image: url(http://127.0.0.1:5501/images/nav_btn_hover.png);
+  background-image: url(../images/nav_btn_hover.png);
 }
 .header.active .sitemap-list-wrap {
   /* top: 160px; */
@@ -585,7 +585,7 @@ body.active {
   .header .bottom .nav .right .search-wrap .search-btn {
     width: 15px;
     height: 15px;
-    background-image: url(/images/m_search_btn.png);
+    background-image: url(../images/m_search_btn.png);
   }
   .header .sitemap-list-box {
     display: none;
@@ -680,7 +680,7 @@ body.active {
   z-index: 1;
   width: 20px;
   height: 20px;
-  background: transparent url(/images/m_closed_btn.png) no-repeat center;
+  background: transparent url(../images/m_closed_btn.png) no-repeat center;
   background-size: contain;
   border: 0;
   cursor: pointer;
@@ -726,31 +726,31 @@ body.active {
   width: 20px;
   height: 20px;
   margin: 0 auto 5px;
-  background: url(/images/m_icon_home.png) no-repeat center;
+  background: url(../images/m_icon_home.png) no-repeat center;
   background-size: contain;
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-home {
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-mygarden {
-  background-image: url(/images/m_icon_mygarden.png);
+  background-image: url(../images/m_icon_mygarden.png);
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-alarm {
-  background-image: url(/images/m_icon_alarm.png);
+  background-image: url(../images/m_icon_alarm.png);
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-cs {
-  background-image: url(/images/m_icon_cs.png);
+  background-image: url(../images/m_icon_cs.png);
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-cart {
-  background-image: url(/images/m_icon_cart.png);
+  background-image: url(../images/m_icon_cart.png);
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-coupon {
-  background-image: url(/images/m_icon_coupon.png);
+  background-image: url(../images/m_icon_coupon.png);
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-point {
-  background-image: url(/images/m_icon_point.png);
+  background-image: url(../images/m_icon_point.png);
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu .icon-delivery {
-  background-image: url(/images/m_icon_delivery.png);
+  background-image: url(../images/m_icon_delivery.png);
 }
 .m-sitemap-list-container .m-list-box .m-quick-menu span {
   font-weight: 300;
@@ -820,7 +820,7 @@ body.active {
   content: "";
   width: 15px;
   height: 9px;
-  background: url(/images/m_icon_open.png) no-repeat center;
+  background: url(../images/m_icon_open.png) no-repeat center;
   background-size: contain;
   -webkit-transform: translateY(-50%) scaleY(-1);
   -ms-transform: translateY(-50%) scaleY(-1);
@@ -928,11 +928,11 @@ body.active {
 .v-swiper .v-nav-wrap .v-next {
 }
 .v-swiper .v-nav-wrap .v-prev::after {
-  background: url(/images/icon_visual_prev.png) no-repeat center;
+  background: url(../images/icon_visual_prev.png) no-repeat center;
   background-size: cover;
 }
 .v-swiper .v-nav-wrap .v-next::after {
-  background: url(/images/icon_visual_next.png) no-repeat center;
+  background: url(../images/icon_visual_next.png) no-repeat center;
   background-size: cover;
 }
 .v-swiper .v-nav-wrap .v-pg {
@@ -1035,7 +1035,7 @@ section.quick {
   width: 16px;
   height: 21px;
   padding: 0 10px;
-  background: url(/images/icon_new_s.png) no-repeat center;
+  background: url(../images/icon_new_s.png) no-repeat center;
 }
 .quick-btn > li > a .img img {
   display: block;
@@ -1671,7 +1671,7 @@ section.quick {
 }
 .travel-list .travel-right ul li .icon-more {
   display: inline-block;
-  background: url("/images/arrow19_r.png") no-repeat center;
+  background: url("../images/arrow19_r.png") no-repeat center;
   width: 7px;
   height: 12px;
   background-size: contain;
@@ -2474,7 +2474,7 @@ section.guide {
   height: 10px;
   vertical-align: 1px;
   margin-left: 10px;
-  background: url(/images/icon_arrow_r.png) no-repeat center;
+  background: url(../images/icon_arrow_r.png) no-repeat center;
   background-size: contain;
 }
 .footer .footer-top .footer-menu .m-footer-menu {
@@ -2645,7 +2645,7 @@ section.guide {
   width: 8px;
   height: 10px;
   margin: 0 auto 3px;
-  background: url(/images/icon_fix_top.png) no-repeat center;
+  background: url(../images/icon_fix_top.png) no-repeat center;
   background-size: contain;
 }
 .fix-quick-menu > .write-btn-box {
@@ -2664,7 +2664,7 @@ section.guide {
   transform: translate(-50%, -50%);
   width: 14px;
   height: 14px;
-  background: url(/images/write_btn_2.png) no-repeat center;
+  background: url(../images/write_btn_2.png) no-repeat center;
   background-size: contain;
 }
 /* 메인화면 고정 퀵메뉴 반응형 작업 */
